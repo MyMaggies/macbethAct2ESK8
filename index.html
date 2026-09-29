@@ -1,0 +1,1261 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Macbeth Act 2 analysis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<style>@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600..900&display=swap");
+
+/* =========================================================
+   Macbeth Act 1: storm on the heath
+   Day  = dawn storm: pale slate sky, heather purple, lightning gold
+   Night = the heath at night: indigo sky, lightning gold on everything that matters
+   ========================================================= */
+:root{
+  --bg:#DCE2EA; --panel:#FCFBF8; --panel2:#F0F2F7; --ink:#10151D; --muted:#465164; --line:#B4BECB; --line2:#8794A8;
+  --accent:#4E2A84; --accent-ink:#FFFFFF; --hl:#EAE2F6;
+  --gold:#7A5300; --goldbg:#FCF0C9; --lightning:#F5C02E; --lightning-ink:#1B1400;
+  --blood:#A81D2A; --ok:#1E6B49; --teal:#0F6672; --amber:#A4520F;
+  --mark:rgba(245,192,46,.55); --mark2:rgba(245,192,46,.85); --markfaint:rgba(245,192,46,.20);
+  --rule:rgba(168,29,42,.30);
+  --sky1:#A9B7CE; --sky2:#E9E1F1; --mist:rgba(255,255,255,.65);
+  --glow:rgba(255,236,170,.55); --glow2:rgba(120,90,190,.18);
+  --ground:#17231F; --ground-ink:#EAF0EE;
+  --spell1:#2C1758; --spell2:#5A2F9A;
+  --onfill:#FFFFFF; --violet:#4E2A84; --glow-rev:rgba(255,214,120,.55);
+  --scale:1;
+  --castle:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='102' height='100' viewBox='0 0 102 100'%3E%3Cpath fill='%232E3752' d='M4 100V54h8v-7h6v7h6v-7h6v7h8V36h6v-9l7-11 7 11v9h6v18h8v-7h6v7h6v-7h6v7h8V100Z'/%3E%3Crect x='49' y='40' width='4' height='8' rx='1' fill='%23E9E1F1'/%3E%3Crect x='18' y='62' width='4' height='7' rx='1' fill='%23E9E1F1'/%3E%3Crect x='80' y='62' width='4' height='7' rx='1' fill='%23E9E1F1'/%3E%3C/svg%3E"); --hills:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='100' viewBox='0 0 1200 100' preserveAspectRatio='none'%3E%3Cpath fill='%238E99B4' d='M0 100V58C120 30 220 52 340 46S560 20 700 44 900 60 1040 40 1150 34 1200 44V100Z'/%3E%3Cpath fill='%233E4866' d='M0 100V80C140 62 260 90 420 80S700 62 860 78 1080 90 1200 74V100Z'/%3E%3C/svg%3E");
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B0F20; --panel:#151C33; --panel2:#1B2440; --ink:#EEF1F8; --muted:#AAB5CC; --line:#2F3B5E; --line2:#4A5B86;
+    --accent:#F5C02E; --accent-ink:#1B1400; --hl:rgba(245,192,46,.16);
+    --gold:#F5C02E; --goldbg:#2A2410; --lightning:#F5C02E; --lightning-ink:#1B1400;
+    --blood:#FF7A85; --ok:#6FD6A6; --teal:#6DD3DE; --amber:#FFAE6B; --onfill:#0B0F20; --violet:#B79CFF;
+    --mark:rgba(245,192,46,.32); --mark2:rgba(245,192,46,.55); --markfaint:rgba(245,192,46,.12);
+    --rule:rgba(245,192,46,.22);
+    --sky1:#080C1E; --sky2:#2C2558; --mist:rgba(170,150,255,.16);
+    --glow:rgba(120,100,220,.30); --glow2:rgba(245,192,46,.08); --glow-rev:rgba(245,192,46,.18);
+    --ground:#05070F; --ground-ink:#EEF1F8;
+    --spell1:#231A4F; --spell2:#3D2C86;
+    --castle:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='102' height='100' viewBox='0 0 102 100'%3E%3Cpath fill='%2305070E' d='M4 100V54h8v-7h6v7h6v-7h6v7h8V36h6v-9l7-11 7 11v9h6v18h8v-7h6v7h6v-7h6v7h8V100Z'/%3E%3Crect x='49' y='40' width='4' height='8' rx='1' fill='%23F5C02E'/%3E%3Crect x='18' y='62' width='4' height='7' rx='1' fill='%23F5C02E'/%3E%3Crect x='80' y='62' width='4' height='7' rx='1' fill='%23F5C02E'/%3E%3C/svg%3E"); --hills:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='100' viewBox='0 0 1200 100' preserveAspectRatio='none'%3E%3Cpath fill='%23171C3D' d='M0 100V58C120 30 220 52 340 46S560 20 700 44 900 60 1040 40 1150 34 1200 44V100Z'/%3E%3Cpath fill='%2306080F' d='M0 100V80C140 62 260 90 420 80S700 62 860 78 1080 90 1200 74V100Z'/%3E%3C/svg%3E");
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+    --bg:#0B0F20; --panel:#151C33; --panel2:#1B2440; --ink:#EEF1F8; --muted:#AAB5CC; --line:#2F3B5E; --line2:#4A5B86;
+    --accent:#F5C02E; --accent-ink:#1B1400; --hl:rgba(245,192,46,.16);
+    --gold:#F5C02E; --goldbg:#2A2410; --lightning:#F5C02E; --lightning-ink:#1B1400;
+    --blood:#FF7A85; --ok:#6FD6A6; --teal:#6DD3DE; --amber:#FFAE6B; --onfill:#0B0F20; --violet:#B79CFF;
+    --mark:rgba(245,192,46,.32); --mark2:rgba(245,192,46,.55); --markfaint:rgba(245,192,46,.12);
+    --rule:rgba(245,192,46,.22);
+    --sky1:#080C1E; --sky2:#2C2558; --mist:rgba(170,150,255,.16);
+    --glow:rgba(120,100,220,.30); --glow2:rgba(245,192,46,.08); --glow-rev:rgba(245,192,46,.18);
+    --ground:#05070F; --ground-ink:#EEF1F8;
+    --spell1:#231A4F; --spell2:#3D2C86;
+    --castle:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='102' height='100' viewBox='0 0 102 100'%3E%3Cpath fill='%2305070E' d='M4 100V54h8v-7h6v7h6v-7h6v7h8V36h6v-9l7-11 7 11v9h6v18h8v-7h6v7h6v-7h6v7h8V100Z'/%3E%3Crect x='49' y='40' width='4' height='8' rx='1' fill='%23F5C02E'/%3E%3Crect x='18' y='62' width='4' height='7' rx='1' fill='%23F5C02E'/%3E%3Crect x='80' y='62' width='4' height='7' rx='1' fill='%23F5C02E'/%3E%3C/svg%3E"); --hills:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='100' viewBox='0 0 1200 100' preserveAspectRatio='none'%3E%3Cpath fill='%23171C3D' d='M0 100V58C120 30 220 52 340 46S560 20 700 44 900 60 1040 40 1150 34 1200 44V100Z'/%3E%3Cpath fill='%2306080F' d='M0 100V80C140 62 260 90 420 80S700 62 860 78 1080 90 1200 74V100Z'/%3E%3C/svg%3E");
+    color-scheme:dark;
+}
+
+/* ---------- base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px);font-size:calc(clamp(16px,1.05vw,24px) * var(--scale,1))}
+body{
+  height:100%;margin:0;color:var(--ink);
+  font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:1rem;line-height:1.4;
+  background:
+    radial-gradient(70rem 30rem at 92% -6%, var(--glow), transparent 65%),
+    radial-gradient(60rem 28rem at 0% 108%, var(--glow2), transparent 60%),
+    var(--bg);
+}
+body:has(.revise){background:radial-gradient(70rem 30rem at 92% -6%,var(--glow-rev),transparent 65%),radial-gradient(60rem 28rem at 0% 108%,var(--glow2),transparent 60%),var(--bg)}
+::selection{background:var(--lightning);color:var(--lightning-ink)}
+button{font:inherit;color:inherit;cursor:pointer;transition:transform .09s ease,box-shadow .09s ease,background-color .15s ease,border-color .15s ease}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:Literata,Georgia,"Times New Roman",serif}
+.pane{scrollbar-color:var(--line2) transparent;scrollbar-width:thin}
+#app{height:100%;display:flex;flex-direction:column}
+
+/* shared: icons drawn with masks so they take theme colours */
+.brand b::before,.head h2::before,.track::before,.word::before,.idea b::before,#timer::before{
+  content:"";display:inline-block;flex:none;
+  -webkit-mask:var(--ico,none) center/contain no-repeat;mask:var(--ico,none) center/contain no-repeat;
+}
+
+/* ---------- filter chips ---------- */
+.filters{display:flex;align-items:center;flex-wrap:wrap;gap:.45rem;padding:.7rem 1.3rem .1rem}
+.filters[hidden]{display:none}
+.fl{color:var(--muted);margin-right:.3rem}
+.chip{
+  --c:var(--ink);display:inline-flex;align-items:center;gap:.4rem;min-height:2.45rem;padding:.25rem .8rem;
+  background:var(--panel);border:2px solid var(--line);border-radius:999px;font-size:.95rem;box-shadow:0 3px 0 var(--line);
+}
+.chip .dot{width:.75rem;height:.75rem;border-radius:50%;background:var(--c);box-shadow:0 0 0 2px var(--panel),0 0 0 3px var(--c)}
+.chip:hover{transform:translateY(-1px);border-color:var(--c)}
+.chip:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line)}
+.chip.on{border-color:var(--c);background:var(--hl);background:color-mix(in srgb,var(--c) 20%,var(--panel));font-weight:700;box-shadow:0 3px 0 var(--c)}
+.tg-ambition{--c:var(--gold)} .tg-banquo{--c:var(--teal)} .tg-fate{--c:var(--violet)} .tg-language{--c:var(--muted)}
+.tg-appearance{--c:var(--blood)} .tg-context{--c:var(--ok)} .tg-ahead{--c:var(--amber)} .tg-key13{--c:var(--gold)}
+
+/* =========================================================
+   THE SCRIPT (verse, speakers, annotations)
+   ========================================================= */
+.sp{
+  margin-top:1.1rem;padding-left:3rem;font-weight:700;color:var(--accent);font-size:1.1rem;
+}
+.sp::before{content:"";display:inline-block;width:.6rem;height:.6rem;margin-right:.55rem;border-radius:50%;background:var(--lightning);box-shadow:0 0 0 2px var(--accent);vertical-align:.08em}
+.stg,.gapline{padding-left:3rem;font-style:italic;color:var(--muted);font-family:Literata,Georgia,serif;font-size:1.25rem;margin:.5rem 0}
+.gapline{margin:1rem 0;border-top:2px dotted var(--line2);border-bottom:2px dotted var(--line2);padding-top:.6rem;padding-bottom:.6rem}
+.ln{display:grid;grid-template-columns:3rem 1fr;align-items:baseline}
+.ln .num{color:var(--muted);font-size:.85rem;text-align:right;padding-right:1.1rem;user-select:none;font-variant-numeric:tabular-nums}
+.ln .tx{font-family:Literata,Georgia,"Times New Roman",serif;font-size:1.6rem;line-height:1.5;text-wrap:pretty}
+.sd{font-style:italic;color:var(--muted);font-size:.85em}
+.foot{margin-top:1.5rem;color:var(--muted);font-size:.85rem;padding-left:3rem}
+
+/* annotated phrases: highlighter pen + underline */
+.ann{
+  cursor:pointer;border-radius:4px;padding:.02em .14em;
+  background:linear-gradient(transparent 52%,var(--mark) 52%);
+  text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:3px;text-underline-offset:5px;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;transition:background-color .15s ease,box-shadow .15s ease;
+}
+.ann:hover{background:var(--mark2)}
+.ann.on{background:var(--mark2);box-shadow:0 0 0 3px var(--accent);text-decoration-color:transparent}
+.ann.dim{pointer-events:none;background:none;text-decoration-color:transparent}
+.ln.rng{cursor:pointer}
+.ln.rng .tx{
+  border-left:7px solid var(--lightning);padding-left:.75rem;margin-left:-.85rem;border-radius:0 8px 8px 0;
+  background:linear-gradient(90deg,var(--markfaint),transparent 80%);
+  box-shadow:inset 3px 0 0 var(--accent);transition:background-color .15s ease;
+}
+.ln.rng:hover .tx{background:linear-gradient(90deg,var(--mark),transparent 90%)}
+.ln.rng.on .tx{background:linear-gradient(90deg,var(--mark2),var(--markfaint) 92%);border-left-width:11px;margin-left:-1rem;padding-left:.8rem}
+.ln.rng.dim{pointer-events:none}
+.ln.rng.dim .tx{border-left-color:transparent;background:none;box-shadow:none}
+
+/* =========================================================
+   SIDE PANEL: notes, prompts, tiers
+   ========================================================= */
+.side h3{
+  font-family:"Grenze Gotisch",Literata,Georgia,serif;font-weight:800;font-size:2.05rem;line-height:1.15;margin:.2rem 0 .55rem;letter-spacing:.005em;
+}
+.side p{font-size:1.15rem;line-height:1.45;margin:.15rem 0 .45rem}
+.side .lead{font-size:1.3rem}
+.side .hint{color:var(--muted)}
+.lab{
+  display:inline-block;margin-top:.9rem;padding:.1rem .8rem;border-radius:999px;background:var(--hl);color:var(--accent);
+  font-weight:700;font-size:.95rem;
+}
+.q{
+  position:relative;margin:.2rem 0 1rem;padding:.7rem 1rem .7rem 3.2rem;border-radius:12px;
+  background:var(--panel);border:2px solid var(--line);
+  font-family:Literata,Georgia,serif;font-style:italic;font-size:1.2rem;line-height:1.5;
+}
+.q::before{
+  content:"\201C";position:absolute;left:.6rem;top:-.05rem;font-family:"Grenze Gotisch",Literata,Georgia,serif;font-style:normal;font-weight:800;
+  font-size:3.6rem;line-height:1;color:var(--lightning);text-shadow:0 2px 0 rgba(16,21,29,.35);
+}
+.ptop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);margin-bottom:.5rem}
+.mini{min-height:2.4rem;padding:.15rem .85rem;background:var(--panel);border:2px solid var(--line2);border-radius:10px;box-shadow:0 3px 0 var(--line2)}
+.mini:hover{border-color:var(--accent)}
+.mini:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line2)}
+
+/* "Ask the class" speech bubble */
+.ask{
+  position:relative;margin:1.4rem 0 .9rem;padding:.7rem 1.1rem;border-radius:16px;
+  background:var(--goldbg);border:3px solid var(--lightning);
+}
+.ask::after{
+  content:"";position:absolute;left:2rem;bottom:-.95rem;width:1.3rem;height:1.3rem;transform:rotate(45deg);
+  background:var(--goldbg);border-right:3px solid var(--lightning);border-bottom:3px solid var(--lightning);border-bottom-right-radius:5px;
+}
+.ask b{color:var(--gold);font-size:.95rem}
+.ask p{margin:.2rem 0 0;font-weight:700;font-size:1.25rem}
+
+.tierbtns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.3rem}
+.ghost{
+  min-height:2.75rem;padding:.3rem 1.05rem;margin-top:.6rem;background:var(--panel);border:2px solid var(--accent);border-radius:12px;box-shadow:0 4px 0 var(--accent);color:var(--ink);
+}
+.ghost:hover{transform:translateY(-1px);background:var(--hl)}
+.ghost:active{transform:translateY(3px);box-shadow:0 1px 0 var(--accent)}
+.small{min-height:2.45rem;font-size:.95rem;margin-top:0}
+.tierbtns .ghost{margin-top:0}
+button[data-t="sup"]{border-color:var(--teal);box-shadow:0 4px 0 var(--teal)}
+button[data-t="sup"]:active{box-shadow:0 1px 0 var(--teal)}
+button[data-t="str"]{border-color:var(--gold);box-shadow:0 4px 0 var(--gold);background:var(--goldbg)}
+button[data-t="str"]:active{box-shadow:0 1px 0 var(--gold)}
+.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);box-shadow:0 4px 0 rgba(16,21,29,.45)}
+.primary:hover{background:var(--accent)}
+.row{display:flex;gap:.6rem;flex-wrap:wrap;margin:.5rem 0 .9rem}
+.tier{margin-top:.8rem;padding:.55rem .95rem;border-radius:12px;border:2px solid var(--teal);background:var(--panel);scroll-margin-bottom:5rem;animation:rise .25s ease-out both}
+.tier.str{border-color:var(--gold);background:var(--goldbg)}
+.tier[hidden]{display:none}
+.tier b{display:block;color:var(--muted);font-size:.9rem}
+.tagrow{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1rem}
+.tagrow .chip{min-height:0;padding:.12rem .75rem;font-size:.85rem;cursor:default;border-color:var(--c);box-shadow:none}
+.tagrow .chip:hover{transform:none}
+.notenav{
+  position:sticky;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-top:1rem;padding:.75rem 0 .25rem;
+  border-top:2px solid var(--line);background:var(--panel2);
+}
+.notenav button{min-height:2.75rem;padding:.3rem 1.05rem;background:var(--panel);border:2px solid var(--accent);border-radius:12px;box-shadow:0 4px 0 var(--accent)}
+.notenav button:hover{background:var(--hl);transform:translateY(-1px)}
+.notenav button:active{transform:translateY(3px);box-shadow:0 1px 0 var(--accent)}
+
+.think{border:3px solid var(--teal);border-radius:16px;padding:.7rem 1.1rem;margin:1rem 0;background:var(--panel)}
+.think b{color:var(--teal)}
+.think p{margin:.2rem 0 .4rem}
+
+/* =========================================================
+   AIMS SCREEN: learning intention, success criteria, word, path
+   ========================================================= */
+.li{margin:.8rem 0;padding:.3rem 0 .3rem 1.1rem;border-left:8px solid var(--lightning)}
+.li p{font-family:Literata,Georgia,serif;font-size:1.4rem;line-height:1.4;margin:.3rem 0 0}
+.sc{margin:.9rem 0}
+.sc ul{list-style:none;margin:.5rem 0 0;padding:0}
+.sc li{position:relative;padding-left:2.4rem;margin:.4rem 0;font-size:1.22rem;line-height:1.35}
+.sc li::before{content:"";position:absolute;left:0;top:.18em;width:1.35rem;height:1.35rem;border:3px solid var(--accent);border-radius:7px;background:var(--panel)}
+.stretchsc{
+  margin:.9rem 0 0;padding:.55rem 1rem;border-radius:12px;background:var(--goldbg);border:2px solid var(--lightning);border-left-width:8px;font-size:1.2rem;
+}
+.word{
+  --ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1l2.6 8.4L23 12l-8.4 2.6L12 23l-2.6-8.4L1 12l8.4-2.6z'/%3E%3C/svg%3E");
+  position:relative;margin:.9rem 0;padding:.7rem 1.3rem .7rem 3.6rem;border-radius:16px;font-size:1.15rem;line-height:1.4;
+  background:linear-gradient(135deg,var(--spell1),var(--spell2));color:#FFFFFF;border:3px solid var(--lightning);
+  box-shadow:0 5px 0 rgba(16,21,29,.4);
+}
+.word::before{position:absolute;left:1rem;top:1rem;width:1.7rem;height:1.7rem;background:var(--lightning)}
+.word b{color:var(--lightning)}
+.path{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem .2rem;padding:0;margin:.6rem 0 0;counter-reset:step}
+.path li{
+  counter-increment:step;display:inline-flex;align-items:center;gap:.5rem;padding:.35rem .9rem .35rem .4rem;border-radius:999px;
+  background:var(--panel);border:2px solid var(--line2);font-size:1rem;
+}
+.path li::before{
+  content:counter(step);display:inline-grid;place-items:center;flex:none;width:1.7rem;height:1.7rem;border-radius:50%;
+  background:var(--line2);color:var(--ink);font-weight:700;font-size:.85rem;
+}
+.path li:first-child{border-color:var(--accent);font-weight:700}
+.path li:first-child::before{background:var(--accent);color:var(--accent-ink)}
+.path li:last-child{border-color:var(--lightning);background:var(--goldbg)}
+.path li:last-child::before{background:var(--lightning);color:var(--lightning-ink)}
+.path li+li{margin-left:1.5rem;position:relative}
+.path li+li::after{content:"";position:absolute;left:-1.3rem;top:50%;width:1.1rem;height:3px;background:repeating-linear-gradient(90deg,var(--line2) 0 5px,transparent 5px 9px)}
+
+/* context: mystery cards */
+.fact.card{
+  position:relative;margin:.75rem 0;padding:.8rem 1.1rem .8rem 4.3rem;cursor:pointer;background:var(--panel2);border:2px solid var(--line2);border-radius:16px;box-shadow:0 4px 0 var(--line2);
+}
+.fact.card::before{
+  content:"?";position:absolute;left:1rem;top:.9rem;display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;
+  background:var(--accent);color:var(--accent-ink);font-family:"Grenze Gotisch",Literata,Georgia,serif;font-weight:800;font-size:1.6rem;line-height:1;
+  box-shadow:0 3px 0 rgba(16,21,29,.4);
+}
+.fact.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.fact.card:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line2)}
+.fact h3{margin:0 0 .2rem;font-size:1.25rem}
+.fact .prompt{font-weight:700;color:var(--accent);font-size:1.25rem;margin:.1rem 0 0}
+.fact p{margin:0}
+.fact .txt{display:none;margin-top:.55rem;font-size:1.25rem;line-height:1.5}
+.fact .tap{display:block;color:var(--muted);font-size:.9rem;margin-top:.3rem}
+.fact.open{border-color:var(--ok);box-shadow:0 4px 0 var(--ok)}
+.fact.open::before{content:"\2713";background:var(--ok);font-family:Atkinson Hyperlegible,system-ui,sans-serif;font-size:1.4rem}
+.fact.open .txt{display:block;animation:rise .25s ease-out both}
+.fact.open .tap{display:none}
+.idea{padding:.6rem 0;border-bottom:2px dotted var(--line2)}
+.idea:last-child{border-bottom:0}
+.idea b{--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E");display:flex;align-items:center;gap:.5rem;font-family:Literata,Georgia,serif;font-size:1.3rem}
+.idea b::before{width:.6em;height:.85em;background:var(--lightning);filter:drop-shadow(0 1px 0 rgba(16,21,29,.45))}
+.idea p{margin:0}
+
+/* =========================================================
+   GAP-FILLS, WORD BANK, QUICK CHECK
+   ========================================================= */
+.cloze{font-family:Literata,Georgia,serif;font-size:1.7rem;line-height:2.3;margin:0;max-width:44em;text-wrap:pretty}
+.gap{
+  display:inline-block;min-width:6.5em;text-align:center;margin:0 .1em;padding:0 .4em;line-height:1.6;cursor:pointer;vertical-align:baseline;
+  background:var(--hl);border:2px dashed var(--accent);border-radius:10px;
+}
+.gap:hover{background:var(--mark)}
+.gap sup{
+  display:inline-grid;place-items:center;width:1.5em;height:1.5em;margin-right:.35em;border-radius:50%;vertical-align:.15em;
+  background:var(--accent);color:var(--accent-ink);font-family:"Atkinson Hyperlegible",sans-serif;font-size:.55em;font-weight:700;
+}
+.gap .ans{visibility:hidden;font-family:"Atkinson Hyperlegible",sans-serif;font-weight:700;font-size:.85em;color:var(--ok)}
+.gap.open{background:transparent;border-style:solid;border-color:var(--ok);animation:pop .25s ease-out both}
+.gap.open .ans{visibility:visible}
+@keyframes pop{from{transform:scale(.9)}60%{transform:scale(1.06)}to{transform:scale(1)}}
+.bank{display:flex;flex-wrap:wrap;gap:.55rem;margin:.5rem 0 1rem}
+.bank span{padding:.3rem .9rem;background:var(--panel);border:2px solid var(--line2);border-radius:10px;box-shadow:0 3px 0 var(--line2);font-size:1.15rem}
+.track{
+  --ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E");
+  position:relative;margin-top:1rem;padding:.8rem 1.1rem .8rem 3.4rem;border-radius:16px;background:var(--goldbg);border:3px solid var(--lightning);
+}
+.track::before{position:absolute;left:1rem;top:.9rem;width:1.3rem;height:1.8rem;background:var(--gold)}
+.track p{margin:0;font-size:1.15rem}
+.hinge{margin-top:1.3rem;padding-top:.6rem;border-top:2px dotted var(--line2)}
+.hq{font-weight:700}
+.opt{
+  display:block;width:100%;text-align:left;margin:.5rem 0;padding:.55rem .95rem;min-height:2.9rem;font-size:1.05rem;
+  background:var(--panel);border:2px solid var(--line2);border-radius:12px;box-shadow:0 4px 0 var(--line2);
+}
+.opt:hover:not(:disabled){transform:translateY(-1px);border-color:var(--accent)}
+.opt:active:not(:disabled){transform:translateY(3px);box-shadow:0 1px 0 var(--line2)}
+.opt.right{border-color:var(--ok);background:var(--hl);background:color-mix(in srgb,var(--ok) 18%,var(--panel));box-shadow:0 4px 0 var(--ok);font-weight:700}
+.opt.right::before{content:"\2713  "}
+.opt.wrong{border-color:var(--blood);text-decoration:line-through;box-shadow:0 4px 0 var(--blood)}
+.opt.wrong::before{content:"\2717  ";text-decoration:none;display:inline-block}
+.hres{margin-top:.6rem;font-size:1.1rem}
+
+/* exit ticket + self rating */
+.qa{position:relative;margin:.8rem 0;padding:.75rem 1.1rem;background:var(--panel2);border:2px solid var(--line2);border-radius:16px;box-shadow:0 4px 0 var(--line2);cursor:pointer}
+.qa:hover{transform:translateY(-2px);border-color:var(--accent)}
+.qa .lv{display:inline-block;margin-bottom:.35rem;padding:.02rem .75rem;border-radius:999px;background:var(--teal);color:var(--onfill);font-size:.8rem;font-weight:700}
+.qa.stretch .lv{background:var(--lightning);color:var(--lightning-ink)}
+.qa .qq{font-weight:700;font-size:1.2rem}
+.qa .aa{margin-top:.4rem;font-size:1.2rem;visibility:hidden;color:var(--ok);font-weight:700;height:0;overflow:hidden}
+.qa.open{border-color:var(--ok);box-shadow:0 4px 0 var(--ok)}
+.qa.open .aa{visibility:visible;height:auto;animation:rise .25s ease-out both}
+.rate{padding:.65rem 0;border-bottom:2px dotted var(--line2)}
+.rate:last-child{border-bottom:0}
+.rate p{margin:0 0 .45rem;font-size:1.05rem}
+.rbtns{display:flex;gap:.45rem;flex-wrap:wrap}
+.rb{min-height:2.5rem;padding:.15rem .9rem;background:var(--panel);border:2px solid var(--line2);border-radius:10px;box-shadow:0 3px 0 var(--line2)}
+.rb:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line2)}
+.rb[data-rate$=":0"]{border-color:var(--blood);box-shadow:0 3px 0 var(--blood)}
+.rb[data-rate$=":1"]{border-color:var(--amber);box-shadow:0 3px 0 var(--amber)}
+.rb[data-rate$=":2"]{border-color:var(--ok);box-shadow:0 3px 0 var(--ok)}
+.rb.on{color:var(--onfill);font-weight:700;animation:pop .25s ease-out both}
+.rb.on::before{content:"\2713  "}
+.rb[data-rate$=":0"].on{background:var(--blood)}
+.rb[data-rate$=":1"].on{background:var(--amber)}
+.rb[data-rate$=":2"].on{background:var(--ok)}
+
+/* timer */
+#timer{
+  --ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E");
+  position:fixed;right:1.3rem;bottom:6.2rem;z-index:6;display:flex;align-items:center;gap:.8rem;padding:.5rem 1rem;border-radius:16px;
+  background:var(--ground);color:var(--lightning);border:3px solid var(--lightning);box-shadow:0 8px 0 rgba(0,0,0,.35),0 0 30px rgba(245,192,46,.35);
+  font-size:2.1rem;font-weight:700;font-variant-numeric:tabular-nums;
+}
+#timer::before{width:.6em;height:.85em;background:var(--lightning)}
+#timer[hidden]{display:none}
+#timer.done{background:var(--blood);color:var(--onfill);border-color:var(--onfill)}
+#timer.done::before{background:var(--onfill)}
+#timer button{font-size:1rem;min-height:2.4rem;padding:.15rem .8rem;border:2px solid currentColor;border-radius:10px;background:transparent;color:inherit}
+
+/* =========================================================
+   REVISE MODE (home study)
+   ========================================================= */
+.pane.wide.revise{
+  background:var(--panel);border:2px solid var(--line2);border-radius:16px;padding:1.2rem 1.7rem 2rem;
+  box-shadow:0 5px 0 var(--line2),0 26px 40px -26px rgba(8,10,25,.5);animation:rise .35s ease-out both;
+}
+.revise h2{margin:0;font-size:2rem;font-family:"Grenze Gotisch",Literata,Georgia,serif;font-weight:850}
+.revise .intro{margin:.3rem 0 .7rem;color:var(--muted);font-size:1.15rem}
+.revise .head::after{display:none}
+.tabs{display:flex;gap:.6rem;flex-wrap:wrap;margin:.7rem 0 1.1rem}
+.tab{min-height:2.9rem;padding:.3rem 1.2rem;background:var(--panel);border:2px solid var(--line2);border-radius:12px;box-shadow:0 4px 0 var(--line2)}
+.tab:hover{transform:translateY(-1px);border-color:var(--accent)}
+.tab:active{transform:translateY(3px);box-shadow:0 1px 0 var(--line2)}
+.tab.on{background:var(--lightning);color:var(--lightning-ink);border-color:var(--lightning);font-weight:700;box-shadow:0 4px 0 rgba(16,21,29,.4)}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(22rem,1fr));gap:1.1rem;margin-top:.9rem;align-items:start}
+.qcard{
+  position:relative;padding:1rem 1.1rem 1rem;cursor:pointer;background:var(--panel2);border:2px solid var(--line2);border-top:8px solid var(--accent);border-radius:16px;box-shadow:0 4px 0 var(--line2);
+}
+.qcard::after{
+  content:"";position:absolute;right:.9rem;top:.7rem;width:1rem;height:1.4rem;background:var(--lightning);opacity:.9;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E") center/contain no-repeat;
+}
+.qcard:hover{transform:translateY(-3px);border-color:var(--accent)}
+.qcard:active{transform:translateY(1px)}
+.qcard .qt{font-family:Literata,Georgia,serif;font-style:italic;font-size:1.25rem;line-height:1.45;margin:0 1.4rem .4rem 0}
+.qcard .qr{color:var(--muted);font-size:.9rem;margin:0}
+.qcard .qb{display:none;margin-top:.8rem;padding-top:.7rem;border-top:2px dotted var(--line2)}
+.qcard .qb p{margin:.25rem 0 .55rem;font-size:1.05rem}
+.qcard.open{border-color:var(--ok);border-top-color:var(--ok);box-shadow:0 4px 0 var(--ok)}
+.qcard.open .qb{display:block;animation:rise .25s ease-out both}
+.qcard .tagrow{margin-top:.5rem}
+.qz{max-width:46rem}
+.qz .qn{color:var(--muted)}
+.qz h3{font-size:1.55rem;margin:.35rem 0 .7rem}
+.qz .why{margin-top:.7rem;font-size:1.1rem}
+.score{font-family:"Grenze Gotisch",Literata,Georgia,serif;font-size:3.4rem;font-weight:850;line-height:1;color:var(--gold)}
+.gapcard{max-width:54rem;margin:1rem 0;padding:.9rem 1.2rem 1rem;background:var(--panel2);border:2px solid var(--line2);border-radius:16px;box-shadow:0 4px 0 var(--line2)}
+.gapcard h3{margin:0 0 .35rem;font-size:1.2rem}
+.gapcard .cloze{font-size:1.35rem;line-height:2.15}
+.gapcard .stretchsc{font-size:1.1rem}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important}
+}
+@media (forced-colors:active){
+  .ann{text-decoration-color:Highlight}
+  .gap,.chip,.opt,.btn,.pill{border-color:ButtonText}
+}
+
+/* =========================================================
+   LESSONS 3-5: practice questions, assessment, spot the irony, battle
+   ========================================================= */
+:root{--rose:#B0306B;--sky:#1F5FBF}
+:root[data-theme="dark"]{--rose:#FF8CC0;--sky:#7DB2FF}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--rose:#FF8CC0;--sky:#7DB2FF}}
+.tg-lady{--c:var(--rose)} .tg-irony{--c:var(--sky)}
+.tg-guilt{--c:var(--violet)} .tg-peel{--c:var(--teal)}
+.opts{margin:.5rem 0 0;padding-left:1.3rem;font-weight:400;font-size:1.05rem}
+.opts li{margin:.25rem 0}
+.opts-a{list-style:upper-alpha}
+.mt{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.5rem;font-weight:400}
+.mt ul{margin:0;padding-left:1.1rem;font-size:1.05rem}
+.qa .aa .ms{margin:.4rem 0 0;padding-left:1.2rem;font-weight:400;color:var(--ink);font-size:1rem}
+.spotitem{margin:.7rem 0;padding:.7rem 1.1rem;background:var(--panel2);border:2px solid var(--line2);border-radius:16px;box-shadow:0 4px 0 var(--line2);cursor:pointer}
+.spotitem:hover{border-color:var(--accent);transform:translateY(-1px)}
+.spotitem.picked{border-color:var(--accent);background:var(--hl);box-shadow:0 4px 0 var(--accent)}
+.spotitem .sq{margin:0;font-family:Literata,Georgia,serif;font-size:1.3rem;line-height:1.45}
+.spotitem .sw{margin:.4rem 0 0;font-size:1.05rem}
+.spotitem.ok{border-color:var(--ok);box-shadow:0 4px 0 var(--ok)}
+.spotitem.ok .sw::before{content:"\2713  Yes, dramatic irony. ";font-weight:700;color:var(--ok)}
+.spotitem.miss{border-color:var(--amber);box-shadow:0 4px 0 var(--amber)}
+.spotitem.miss .sw::before{content:"Missed: this is dramatic irony. ";font-weight:700;color:var(--amber)}
+.spotitem.bad{border-color:var(--blood);box-shadow:0 4px 0 var(--blood)}
+.spotitem.bad .sw::before{content:"\2717  Not this one. ";font-weight:700;color:var(--blood)}
+.spotitem.none .sw::before{content:"\2713  Correct to leave it. ";font-weight:700;color:var(--muted)}
+.bcard{max-width:46rem}
+.meter{height:2.2rem;border:3px solid var(--line2);border-radius:999px;background:var(--panel);overflow:hidden;margin:.5rem 0}
+.meter .bar{height:100%;background:linear-gradient(90deg,var(--blood),var(--lightning));transition:width .5s ease}
+.pane.assess{display:grid;place-content:center;text-align:center;gap:1rem;min-height:60vh}
+.pane.assess h2{font-size:3rem;display:block;margin:0}
+.pane.assess h2::before{display:none}
+.pane.assess .sub{font-size:1.6rem;margin:0}
+.pane.assess .row{justify-content:center}
+.big{min-height:4rem;padding:.5rem 1.6rem;font-size:1.3rem}
+body:has(.pane.assess) #timer{left:50%;right:auto;top:78%;bottom:auto;transform:translate(-50%,-50%);font-size:6rem;padding:.6rem 2.2rem;border-radius:26px}
+body:has(.pane.assess) #timer button{font-size:1.2rem}
+
+/* =========================================================
+   V2 LAYOUT: one clear focus, everything else on demand
+   ========================================================= */
+[hidden]{display:none !important}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+#panel>*{animation:rise .25s ease-out both}
+.pane.wide{grid-column:1 / -1;overflow:auto}
+
+/* small icons that take the theme colour */
+.ic{display:inline-block;flex:none;width:1.1em;height:1.1em;background:currentColor;-webkit-mask:var(--i) center/contain no-repeat;mask:var(--i) center/contain no-repeat}
+.ic-focus{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5'/%3E%3C/svg%3E")}
+.ic-close{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M5 5l14 14M19 5L5 19'/%3E%3C/svg%3E")}
+.ic-wide{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12h18M7 8l-4 4 4 4M17 8l4 4-4 4'/%3E%3C/svg%3E")}
+.ic-full{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='16' rx='2.5'/%3E%3Cpath d='M9 4v16'/%3E%3C/svg%3E")}
+.ic-back{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 5l-7 7 7 7'/%3E%3C/svg%3E")}
+.ic-next{--i:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 5l7 7-7 7'/%3E%3C/svg%3E")}
+.car{display:inline-block;width:.6em;height:.6em;margin-left:.5rem;border-right:3px solid currentColor;border-bottom:3px solid currentColor;transform:translateY(-.15em) rotate(45deg)}
+
+/* ---------- top bar: where am I, what is next ---------- */
+.topbar{
+  position:relative;z-index:8;display:flex;align-items:center;gap:1rem;padding:.55rem 1.1rem .85rem;isolation:isolate;
+  background:linear-gradient(180deg,var(--sky1) 0%,var(--sky2) 100%);
+  max-height:12rem;transition:opacity .5s ease,max-height .6s ease,padding .6s ease;
+}
+.topbar::before{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:var(--castle),var(--hills),radial-gradient(26rem 4rem at 30% 100%,var(--mist),transparent 72%);
+  background-repeat:no-repeat;background-size:auto 100%,100% 34%,220% 100%;background-position:80% calc(100% - 6px),left bottom,0 100%;
+}
+.topbar::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:6px;
+  background:
+    repeating-linear-gradient(90deg,transparent 0 9px,rgba(245,192,46,.9) 9px 10px,transparent 10px 34px),
+    repeating-linear-gradient(90deg,rgba(168,29,42,.95) 0 4px,transparent 4px 34px),
+    repeating-linear-gradient(90deg,rgba(7,16,30,.75) 0 14px,transparent 14px 28px),
+    #1D5B45;
+}
+.b-left{display:flex;align-items:center;gap:.8rem;flex:none}
+.b-mid{flex:1;display:flex;align-items:center;justify-content:center;gap:.6rem;min-width:0}
+.b-right{display:flex;gap:.5rem;flex:none}
+.brand{display:flex;align-items:center;gap:.5rem}
+.brand b{
+  --ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E");
+  display:inline-flex;align-items:center;gap:.3rem;font-family:"Grenze Gotisch",Literata,Georgia,serif;font-weight:850;font-size:1.9rem;line-height:1;
+  color:var(--ink);text-shadow:0 0 18px var(--glow);
+}
+.brand b::before{width:.6em;height:.9em;background:var(--lightning);filter:drop-shadow(0 1px 0 rgba(16,21,29,.5))}
+.brand span{background:var(--lightning);color:var(--lightning-ink);font-weight:700;font-size:.8rem;padding:.1rem .65rem;border-radius:999px;box-shadow:0 2px 0 rgba(16,21,29,.35);white-space:nowrap}
+.sbtn{
+  min-height:2.6rem;padding:.25rem .95rem;display:inline-flex;align-items:center;font-weight:700;
+  background:var(--panel);border:2px solid var(--line2);border-radius:12px;box-shadow:0 3px 0 var(--line2);
+}
+.sbtn:hover{transform:translateY(-1px)}
+.sbtn:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line2)}
+.sbtn.lesson{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);box-shadow:0 3px 0 rgba(16,21,29,.45);min-width:8.2rem;justify-content:space-between}
+
+/* popovers (lesson menu, timer, display) */
+.popwrap{position:relative}
+.pop{
+  position:absolute;top:calc(100% + .55rem);z-index:20;min-width:13rem;padding:.5rem;display:flex;flex-direction:column;gap:.4rem;
+  background:var(--panel);border:2px solid var(--line2);border-radius:14px;box-shadow:0 16px 34px -10px rgba(8,10,25,.5);animation:rise .2s ease-out both;
+}
+#lmenu{left:0;min-width:23rem}
+#tmenu,#omenu{right:0}
+.pop button{min-height:2.6rem;padding:.2rem .9rem;text-align:left;background:var(--panel2);border:2px solid var(--line);border-radius:10px}
+.pop button:hover{border-color:var(--accent);background:var(--hl)}
+.lm{display:flex !important;flex-direction:column;align-items:flex-start}
+.lm b{font-size:1.05rem}.lm small{color:var(--muted);font-size:.85rem}
+.lm.on{background:var(--accent) !important;color:var(--accent-ink);border-color:var(--accent) !important}
+.lm.on small{color:var(--accent-ink);opacity:.85}
+.lm.rev.on{background:var(--lightning) !important;color:var(--lightning-ink);border-color:var(--lightning) !important}
+.lm.rev.on small{color:var(--lightning-ink)}
+.orow{display:flex;align-items:center;gap:.4rem}
+.orow span{flex:1;color:var(--muted);padding-right:.6rem}
+.orow button{text-align:center}
+
+/* navigation: back, the path, next */
+.btn{
+  flex:none;white-space:nowrap;min-height:2.85rem;padding:.3rem 1.1rem;display:inline-flex;align-items:center;gap:.5rem;font-weight:700;
+  background:var(--panel);border:2px solid var(--line2);border-radius:12px;box-shadow:0 4px 0 var(--line2);
+}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--line2)}
+.btn.primary{background:var(--lightning);color:var(--lightning-ink);border-color:var(--lightning);box-shadow:0 4px 0 rgba(16,21,29,.5)}
+.btn:disabled{opacity:.4;cursor:default;box-shadow:none;transform:none}
+.btn.back{padding:.3rem .9rem}
+.steps{display:flex;align-items:center;list-style:none;margin:0;padding:0;min-width:0;flex:0 1 auto}
+.steps li{display:flex;align-items:center}
+.steps li+li::before{content:"";width:.7rem;height:3px;border-radius:2px;background:var(--line2);opacity:.7}
+.steps li.done+li::before,.steps li.done + li::before{background:var(--accent);opacity:1}
+.stp{
+  display:inline-flex;align-items:center;gap:.4rem;min-height:2.3rem;padding:.12rem;background:var(--panel);
+  border:2px solid var(--line2);border-radius:999px;box-shadow:0 3px 0 var(--line2);
+}
+.stp:hover{transform:translateY(-1px)}
+.stp .pn{display:inline-grid;place-items:center;width:1.7rem;height:1.7rem;border-radius:50%;font-size:.82rem;font-weight:700;color:#fff;background:var(--line2)}
+.stp .pl{display:none;font-weight:700;padding-right:.7rem;white-space:nowrap}
+.stp.aims .pn{background:#8A5F00}
+.stp.context .pn,.stp.practice .pn{background:var(--teal);color:var(--onfill)}
+.stp.extract .pn{background:var(--accent);color:var(--accent-ink)}
+.stp.link .pn{background:#5F6C80}
+.stp.plenary .pn,.stp.assess .pn{background:var(--blood);color:var(--onfill)}
+.stp.spot .pn,.stp.battle .pn{background:var(--rose);color:var(--onfill)}
+.stp.done{border-color:var(--accent);opacity:.85}
+.stp.on{background:var(--lightning);color:var(--lightning-ink);border-color:var(--lightning);box-shadow:0 3px 0 rgba(16,21,29,.5);opacity:1}
+.stp.on .pl{display:inline}
+.stp.on .pn{background:var(--lightning-ink);color:var(--lightning)}
+.tabs2{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center}
+
+/* ---------- the stage: one focus, one optional drawer ---------- */
+.canvas{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr);gap:1.1rem;padding:1rem 1.2rem 1.1rem;transition:padding .6s ease}
+.canvas.has-drawer{grid-template-columns:minmax(0,1.25fr) minmax(22rem,.85fr)}
+.canvas.has-drawer.wide{grid-template-columns:minmax(0,.8fr) minmax(0,1.3fr)}
+.canvas.has-drawer.mainhidden{grid-template-columns:3.4rem minmax(0,1fr)}
+.canvas.mainhidden #mainpane{display:none}
+.railtab{
+  order:-1;writing-mode:vertical-rl;padding:1rem .3rem;font-weight:700;letter-spacing:.02em;
+  background:var(--panel);border:2px solid var(--line2);border-radius:16px;box-shadow:0 4px 0 var(--line2);
+}
+.railtab:hover{background:var(--hl)}
+.pane{min-height:0}
+.pane.main{
+  display:flex;flex-direction:column;overflow:hidden;background:var(--panel);border:2px solid var(--line2);border-radius:16px;
+  box-shadow:0 5px 0 var(--line2),0 26px 40px -26px rgba(8,10,25,.5);animation:rise .35s ease-out both;
+}
+.phead{display:flex;align-items:flex-start;justify-content:space-between;gap:.6rem 1.2rem;flex-wrap:wrap;padding:.85rem 1.5rem .7rem;border-bottom:2px solid var(--line)}
+.pt{min-width:0}
+.pt .kick{display:inline-block;background:var(--hl);color:var(--accent);font-weight:700;font-size:.88rem;padding:.1rem .8rem;border-radius:999px}
+.pt h2{
+  --ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M14 1 4 14h6l-2 9 11-14h-6z'/%3E%3C/svg%3E");
+  display:flex;align-items:center;gap:.55rem;margin:.35rem 0 0;font-size:1.6rem;line-height:1.2;font-weight:800;
+}
+.pt h2::before{content:"";display:inline-block;flex:none;width:.6em;height:.85em;background:var(--lightning);filter:drop-shadow(0 1px 0 rgba(16,21,29,.45));-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+.pt .sub{margin:.1rem 0 0;color:var(--muted);font-size:1.05rem}
+.ptools{display:flex;flex-wrap:wrap;gap:.45rem;justify-content:flex-end;align-items:center}
+.tb{
+  display:inline-flex;align-items:center;gap:.45rem;min-height:2.6rem;padding:.2rem .95rem;font-weight:700;font-size:.98rem;
+  background:var(--panel2);border:2px solid var(--line2);border-radius:999px;box-shadow:0 3px 0 var(--line2);
+}
+.tb:hover{transform:translateY(-1px);border-color:var(--accent)}
+.tb:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line2)}
+.tb.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);box-shadow:0 3px 0 rgba(16,21,29,.45)}
+.tb.cta:not(.on){background:var(--lightning);color:var(--lightning-ink);border-color:var(--lightning);box-shadow:0 3px 0 rgba(16,21,29,.45)}
+.mhead{flex:1 1 100%;display:flex;align-items:center;gap:.8rem}
+.mhead span{color:var(--muted)}
+.mhead .meter{flex:1;max-width:26rem;margin:0;height:1.6rem}
+.pbody{flex:1;min-height:0;overflow:auto;padding:1.1rem 1.7rem 2.2rem;scrollbar-color:var(--line2) transparent;scrollbar-width:thin}
+.inner{max-width:62rem;margin:0 auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(22rem,1fr));gap:.4rem 1.2rem}
+.lines{position:relative;width:fit-content;min-width:min(100%,34rem);max-width:100%;margin:0 auto;background:linear-gradient(to right,transparent 2.55rem,var(--rule) 2.55rem,var(--rule) calc(2.55rem + 2px),transparent calc(2.55rem + 2px))}
+.foot{max-width:56rem;margin:1.6rem auto 0;padding:0;text-align:center}
+.aimsbody{max-width:58rem}
+.aimsbody{padding-top:1.2vh}
+.aimsbody .li p{font-size:2.1rem;line-height:1.35}
+.aimsbody .sc li{font-size:1.5rem;margin:.7rem 0 .7rem;padding-left:2.6rem}
+.aimsbody .sc li::before{top:.14em}
+.aimsbody .stretchsc{font-size:1.25rem}
+
+/* the drawer: notes and everything that is only sometimes needed */
+.pane.drawer{
+  display:flex;flex-direction:column;overflow:hidden;background:var(--panel2);border:2px solid var(--line);border-top:9px solid var(--accent);border-radius:16px;
+  box-shadow:0 5px 0 var(--line),0 26px 40px -26px rgba(8,10,25,.5);animation:rise .3s ease-out both;
+}
+.dhead{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding:.7rem 1rem .4rem 1.4rem}
+.dhead h3{margin:0;font-size:1.35rem}
+.dtools{display:flex;gap:.4rem}
+.ib{width:2.6rem;height:2.6rem;display:inline-grid;place-items:center;background:var(--panel);border:2px solid var(--line2);border-radius:10px;box-shadow:0 3px 0 var(--line2)}
+.ib:hover{border-color:var(--accent);background:var(--hl)}
+.ib:active{transform:translateY(2px);box-shadow:0 1px 0 var(--line2)}
+.dbody{flex:1;min-height:0;overflow:auto;padding:.3rem 1.4rem 1.2rem;scrollbar-color:var(--line2) transparent;scrollbar-width:thin}
+.dbody .q{margin-top:.2rem}
+.dbody .hinge{margin-top:0;padding-top:0;border-top:0}
+.dtools .tb{min-height:2.4rem;padding:.15rem .8rem;font-size:.92rem}
+.dtools .ib{width:2.4rem;height:2.4rem}
+.dtools{align-items:center}
+
+.canvas.has-drawer .phead{padding:.6rem 1.2rem .5rem;gap:.4rem .8rem}
+.canvas.has-drawer .pt h2{font-size:1.3rem;margin-top:.25rem}
+.canvas.has-drawer .pt .sub{display:none}
+.canvas.has-drawer .ptools .tb{min-height:2.3rem;padding:.12rem .8rem;font-size:.92rem}
+
+/* ---------- bottom bar: theme filters ---------- */
+.filters{
+  display:flex;align-items:center;flex-wrap:wrap;gap:.45rem;padding:.6rem 1.2rem .7rem;background:var(--panel2);border-top:2px solid var(--line);
+  max-height:12rem;transition:opacity .5s ease,max-height .6s ease,padding .6s ease;
+}
+
+.filters .chip{min-height:2.2rem;padding:.12rem .65rem;font-size:.9rem;box-shadow:0 2px 0 var(--line)}
+.filters .chip.on{box-shadow:0 2px 0 var(--c)}
+.filters .fl{margin-right:.2rem}
+
+/* timer sits above the bottom bar */
+#timer{bottom:1.2rem}
+body:has(#filters:not([hidden])) #timer{bottom:5.2rem}
+
+/* ---------- focus mode: only the extract; the rest fades away ---------- */
+#fctl{position:fixed;top:.9rem;left:1.2rem;z-index:30;display:flex;gap:.5rem;opacity:0;visibility:hidden;transition:opacity .4s ease,visibility 0s linear .4s}
+body.focus #fctl{opacity:.9;visibility:visible;transition:opacity .6s ease .45s,visibility 0s}
+body.focus #fctl:hover{opacity:1}
+#fctl button{min-height:2.6rem;padding:.2rem 1rem;display:inline-flex;align-items:center;gap:.4rem;font-weight:700;background:var(--panel);border:2px solid var(--line2);border-radius:999px;box-shadow:0 3px 0 var(--line2)}
+body.focus .topbar,body.focus .filters{opacity:0;max-height:0;padding-top:0;padding-bottom:0;overflow:hidden;pointer-events:none;border-width:0}
+body.focus .canvas{padding-top:4rem}
+body.focus .canvas.has-drawer,body.focus .canvas.has-drawer.wide,body.focus .canvas.has-drawer.mainhidden{grid-template-columns:minmax(0,1fr)}
+body.focus .pane.drawer,body.focus .railtab{display:none}
+body.focus .canvas.mainhidden #mainpane{display:flex}
+body.focus .ptools,body.focus .pt .sub,body.focus .foot{display:none}
+body.focus .phead{border-bottom-color:transparent}
+body.focus .ln .tx{font-size:1.9rem;line-height:1.55}
+body.focus .sp{font-size:1.25rem}
+body.focus .stg,body.focus .gapline{font-size:1.45rem}
+body.focus .ann{background:none;text-decoration:none;box-shadow:none;cursor:default;pointer-events:none}
+body.focus .ln.rng{cursor:default;pointer-events:none}
+body.focus .ln.rng .tx,body.focus .ln.rng.on .tx{border-left-color:transparent;background:none;box-shadow:none;margin-left:0;padding-left:0}
+
+/* ---------- responsive ---------- */
+@media (max-width:1500px){
+  .brand span{display:none}
+  .btn.back .tx{display:none}
+  .btn.back{padding:.3rem .75rem}
+  .topbar{gap:.7rem}
+}
+@media (max-width:1100px){
+  .topbar{flex-wrap:wrap;row-gap:.6rem}
+  .b-mid{order:3;flex:1 1 100%}
+  .b-right{margin-left:auto}
+  .btn .tx{display:none}
+  .btn.next .tx{display:inline}
+  .steps{flex:0 1 auto;overflow:hidden;padding:.1rem .15rem .3rem}
+  .stp{min-height:2rem;padding:.08rem}
+  .stp .pn{width:1.45rem;height:1.45rem;font-size:.75rem}
+  .stp .pl{font-size:.9rem;padding-right:.5rem}
+  .steps li+li::before{width:.35rem}
+}
+@media (max-width:900px){
+  .canvas{padding:.7rem}
+  .canvas.has-drawer,.canvas.has-drawer.wide{grid-template-columns:minmax(0,1fr)}
+  .pane.drawer{position:fixed;left:.6rem;right:.6rem;bottom:.6rem;height:64vh;z-index:15;box-shadow:0 -10px 40px rgba(8,10,25,.5),0 5px 0 var(--line)}
+  .canvas.has-drawer.mainhidden{grid-template-columns:minmax(0,1fr)}
+  .railtab{display:none !important}
+  .phead{padding:.7rem 1rem .5rem}
+  .pbody{padding:.9rem 1rem 1.6rem}
+  .cards{grid-template-columns:1fr}
+  .mt{grid-template-columns:1fr}
+  #timer{bottom:1rem}
+  #lmenu{min-width:18rem}
+}
+@media (max-height:760px){
+  .topbar{padding-top:.4rem;padding-bottom:.7rem}
+  .pbody{padding-top:.7rem}
+  .pt h2{font-size:1.4rem}
+}
+@media (forced-colors:active){
+  .tb,.stp,.btn,.sbtn{border-color:ButtonText}
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="topbar" id="topbar">
+    <div class="b-left">
+      <div class="brand"><b>Macbeth</b><span>Act 2 analysis</span></div>
+      <a class="sbtn" href="macbeth-act1-analysis-v2.html">&larr; Act 1</a>
+      <div class="popwrap">
+        <button id="lbtn" class="sbtn lesson" aria-haspopup="true" aria-expanded="false"><span id="lbl">Lesson 1</span><i class="car" aria-hidden="true"></i></button>
+        <div id="lmenu" class="pop" hidden></div>
+      </div>
+    </div>
+    <nav id="nav" class="b-mid" aria-label="Lesson steps"></nav>
+    <div class="b-right">
+      <div class="popwrap">
+        <button id="tbtn" class="sbtn" aria-haspopup="true" aria-expanded="false">Timer</button>
+        <div id="tmenu" class="pop" hidden>
+          <button data-sec="30">30 seconds</button>
+          <button data-sec="60">1 minute</button>
+          <button data-sec="120">2 minutes</button>
+          <button data-sec="300">5 minutes</button>
+          <button data-sec="600">10 minutes</button>
+        </div>
+      </div>
+      <div class="popwrap">
+        <button id="obtn" class="sbtn" aria-haspopup="true" aria-expanded="false">Display</button>
+        <div id="omenu" class="pop" hidden>
+          <div class="orow"><span>Text size</span><button id="fsm" aria-label="Smaller text">A&minus;</button><button id="fsp" aria-label="Larger text">A+</button></div>
+          <div class="orow"><span>Theme</span><button id="theme">Night mode</button></div>
+          <div class="orow"><span>Screen</span><button id="full">Full screen</button></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="stage" class="canvas"></main>
+  <footer id="filters" class="filters" hidden></footer>
+</div>
+<div id="fctl" aria-hidden="true">
+  <button data-act="unfocus" id="unfocus"><i class="ic ic-back"></i> Back to analysis</button>
+  <button id="ffm" aria-label="Smaller text">A&minus;</button>
+  <button id="ffp" aria-label="Larger text">A+</button>
+</div>
+<div id="timer" hidden role="timer" aria-live="off"><span id="tt">0:00</span><button data-act="tstop">Stop</button></div>
+<noscript>This teaching tool needs JavaScript.</noscript>
+
+<script>
+const DATA = {"TAGS": {"ambition": "Ambition", "language": "Language & technique", "appearance": "Appearance vs reality", "ahead": "Look ahead", "guilt": "Guilt & fear", "lady": "Lady Macbeth", "peel": "★ PEEL evidence"}, "hours": [{"title": "Act 2, Lesson 1", "subtitle": "Scene 2.1: the dagger soliloquy", "steps": [{"type": "aims", "key": "a2h1-aims", "short": "Aims", "mins": 5, "title": "Today’s lesson", "doNow": {"title": "Do now: what do you remember?", "qa": [{"q": "In your Case File, what did you decide Lady Macbeth thinks Macbeth is missing?", "a": "She thinks he has ambition but lacks the “illness” (ruthlessness) that should go with it — she believes he wants power but is too kind to seize it himself."}, {"q": "What did Lady Macbeth ask the spirits to do to her in Act 1 Scene 5?", "a": "To “unsex” her: take away her womanly softness and fill her with cruelty."}, {"q": "By the end of Act 1, was Macbeth ready to commit the murder?", "a": "Yes. He ended Scene 7 saying “I am settled”, though we haven’t yet seen him alone with that decision."}]}}, {"type": "link", "key": "a2l1", "short": "What’s happening", "mins": 4, "title": "Before the soliloquy", "text": "It is almost midnight. Banquo cannot stop thinking about the three {{witches}} and hands his {{sword}} to Fleance for safekeeping before going to bed. Duncan has sent Macbeth a diamond as a gift for Lady Macbeth, calling her his kind hostess. Once Banquo and Fleance leave, Macbeth tells a servant to have Lady Macbeth ring a {{bell}} when his drink is ready. Left alone, he begins to imagine something strange in front of him.", "hinge": {"q": "What does Banquo give to Fleance just before Macbeth enters?", "opts": ["His dagger", "His sword", "A torch", "A jewel"], "correct": 1, "why": "Banquo hands Fleance his sword for safekeeping. The jewel (a diamond) is what Duncan sends Macbeth as a gift for Lady Macbeth, delivered by Banquo."}}, {"type": "extract", "key": "a2e11", "short": "2.1 Dagger", "mins": 15, "label": "Extract 11", "title": "Act 2, Scene 1: Macbeth’s soliloquy", "sub": "The dagger speech", "scene": "2.1", "setup": "Macbeth is alone on stage for the first time since deciding to murder Duncan. This whole speech is a soliloquy: no other character can hear it. Listen for where he argues with himself, and where he finally decides to act.", "think": "With a partner (30 seconds): does Macbeth sound more frightened or more determined by the end of the speech?", "thinkSecs": 30, "task": "Underline the line where Macbeth first doubts that the dagger is real. Circle the line where he decides to go through with the murder.", "lines": [{"k": "sp", "t": "Macbeth"}, {"k": "ln", "n": 44, "t": "Is this a dagger which I see before me,"}, {"k": "ln", "n": 45, "t": "The handle toward my hand? Come, let me clutch"}, {"k": "ln", "n": 46, "t": "thee."}, {"k": "ln", "n": 47, "t": "I have thee not, and yet I see thee still."}, {"k": "ln", "n": 48, "t": "Art thou not, fatal vision, sensible"}, {"k": "ln", "n": 49, "t": "To feeling as to sight? Or art thou but"}, {"k": "ln", "n": 50, "t": "A dagger of the mind, a false creation"}, {"k": "ln", "n": 51, "t": "Proceeding from the heat-oppressèd brain?"}, {"k": "ln", "n": 52, "t": "I see thee yet, in form as palpable"}, {"k": "ln", "n": 53, "t": "As this which now I draw."}, {"k": "st", "t": "He draws his dagger.", "key": "s53"}, {"k": "ln", "n": 54, "t": "Thou marshal’st me the way that I was going,"}, {"k": "ln", "n": 55, "t": "And such an instrument I was to use."}, {"k": "ln", "n": 56, "t": "Mine eyes are made the fools o’ th’ other senses"}, {"k": "ln", "n": 57, "t": "Or else worth all the rest. I see thee still,"}, {"k": "ln", "n": 58, "t": "And, on thy blade and dudgeon, gouts of blood,"}, {"k": "ln", "n": 59, "t": "Which was not so before. There’s no such thing."}, {"k": "ln", "n": 60, "t": "It is the bloody business which informs"}, {"k": "ln", "n": 61, "t": "Thus to mine eyes. Now o’er the one-half world"}, {"k": "gap", "t": "[…Macbeth describes the sleeping world, witchcraft, and withered murder stealing towards its victim like a wolf…]"}, {"k": "ln", "n": 69, "t": "Moves like a ghost. Thou sure and firm-set earth,"}, {"k": "ln", "n": 70, "t": "Hear not my steps, which way they walk, for fear"}, {"k": "ln", "n": 71, "t": "Thy very stones prate of my whereabouts"}, {"k": "ln", "n": 72, "t": "And take the present horror from the time,"}, {"k": "ln", "n": 73, "t": "Which now suits with it. Whiles I threat, he lives."}, {"k": "ln", "n": 74, "t": "Words to the heat of deeds too cold breath gives."}, {"k": "st", "t": "A bell rings.", "key": "s74"}, {"k": "ln", "n": 75, "t": "I go, and it is done. The bell invites me."}, {"k": "ln", "n": 76, "t": "Hear it not, Duncan, for it is a knell"}, {"k": "ln", "n": 77, "t": "That summons thee to heaven or to hell."}, {"k": "st", "t": "He exits.", "key": "s77"}], "notes": [{"id": "a2n11-1", "at": 44, "phrase": "Is this a dagger which I see before me,", "title": "The soliloquy begins", "meaning": "Macbeth is alone on stage and speaks his private thoughts aloud. No other character can hear him: this whole speech is a soliloquy, today’s word.", "effect": "Shakespeare lets us hear Macbeth’s mind working in real time, rather than simply showing us the murder. We watch him decide, rather than just seeing what he decides.", "ask": "Why might Shakespeare want the audience to hear this, rather than just showing us the murder itself?", "tags": ["language"]}, {"id": "a2n11-2", "at": 47, "phrase": "I have thee not, and yet I see thee still.", "title": "Another paradox", "meaning": "Macbeth cannot touch the dagger, and yet he can still see it clearly: two things that shouldn’t both be true at once.", "effect": "This echoes Act 1’s paradoxes (“fair is foul”, “nothing is but what is not”). But this confusion is now happening entirely inside Macbeth’s own head, not from an outside voice.", "ask": "How is this different from the paradoxes the witches spoke in Act 1?", "tags": ["language", "ahead"]}, {"id": "a2n11-3", "from": 48, "to": 51, "title": "Is it real?", "meaning": "Macbeth asks whether the dagger can be felt as well as seen, or whether it is only “a dagger of the mind”, created by his overheated (“heat-oppressèd”) brain.", "effect": "He argues with himself exactly as he did in Act 1 Scene 3 (“cannot be ill, cannot be good”): reasoning out loud instead of simply acting.", "ask": "Does it matter whether the dagger is real, if Macbeth has already decided what to do?", "tags": ["ambition", "language"]}, {"id": "a2n11-4", "at": 54, "phrase": "Thou marshal’st me the way that I was going,", "title": "Leading him on", "meaning": "“Marshal’st” means leads or guides, like a marshal directing troops. The vision doesn’t send Macbeth anywhere new: it only points him towards the murder he had already decided on.", "effect": "This matters for tracking Macbeth’s ambition: his own mind produces this vision. Nothing supernatural is making him kill Duncan.", "ask": "Is Macbeth being led by something outside himself, or by his own ambition?", "tags": ["ambition", "peel"]}, {"id": "a2n11-5", "at": 55, "phrase": "And such an instrument I was to use.", "title": "His own instrument", "meaning": "Macbeth admits the dagger he imagines is the same kind of weapon (“instrument”) he was already planning to use.", "effect": "Compare this with Banquo’s Act 1 warning about the “instruments of darkness”: there, evil forces used small truths to trap men. Here, Macbeth’s own desire has produced the instrument. The temptation is now entirely his own.", "ask": "In Act 1, who or what was the “instrument”? Who, or what, is the instrument now?", "tags": ["ambition", "ahead", "peel"]}, {"id": "a2n11-6", "from": 58, "to": 59, "title": "Blood appears", "meaning": "Fresh blood suddenly appears on the dagger’s blade and handle (“dudgeon”): blood that “was not so before”.", "effect": "This is the first time blood appears in the play as an image inside Macbeth’s own mind, before he has killed anyone. Watch for blood imagery spreading through next lesson’s scene.", "tags": ["language", "ahead", "guilt"]}, {"id": "a2n11-7", "from": 60, "to": 61, "title": "He explains it away — then the night itself seems to change", "meaning": "Macbeth decides the vision comes from the “bloody business” he is about to do, not from anything supernatural.", "effect": "He answers his own question: the dagger isn’t real, it is his guilt and intention showing itself. Straight after this, the speech turns into a description of the whole sleeping world, witchcraft and murder stalking like a wolf (skipped on the page): Macbeth’s language turns darker exactly as his resolve hardens.", "ask": "Why might Shakespeare have Macbeth imagine the whole world turning dark, rather than just thinking about Duncan?", "tags": ["appearance", "guilt", "ahead"]}, {"id": "a2n11-8", "from": 70, "to": 71, "title": "Even the earth might betray him", "meaning": "Macbeth asks the ground itself not to let his footsteps be heard, in case the very stones “prate” (chatter, gossip) about where he is.", "effect": "He is now imagining that even inanimate objects could betray his secret. This nervous, guilty imagination continues the “horrid image” pattern from Act 1 — and will grow far worse next lesson.", "ask": "What does it suggest about Macbeth’s state of mind that he imagines stones being able to talk?", "tags": ["guilt", "language", "ahead"]}, {"id": "a2n11-9", "from": 73, "to": 74, "title": "Enough talking", "meaning": "While Macbeth only threatens Duncan with words, Duncan stays alive. Talking is too cold and slow for an act this urgent (“hot”).", "effect": "He tells himself to stop reasoning and start acting: the turning point from thought to deed.", "ask": "Compare this with “I am settled” at the end of Act 1. What has changed, and what hasn’t?", "tags": ["ambition", "peel"]}, {"id": "a2n11-10", "at": 75, "phrase": "I go, and it is done. The bell invites me.", "title": "The bell as an invitation", "meaning": "The bell, which Lady Macbeth rings as the agreed signal, is described as inviting him, like a welcome guest.", "effect": "Notice how he treats the signal to murder as something pleasant (“invites”). Compare this with the very next lines, where the same bell becomes a funeral bell.", "tags": ["language", "guilt"]}, {"id": "a2n11-11", "from": 76, "to": 77, "title": "A funeral bell for a living man", "meaning": "A “knell” is the sound of a bell rung to announce a death. Macbeth calls the bell a knell for Duncan, who is still alive, summoning him “to heaven or to hell”.", "effect": "This rhyming couplet ends the soliloquy like a spell or a verdict, echoing “fair is foul” and “false face must hide”. Macbeth speaks as though the murder has already happened.", "ask": "Why might Shakespeare end the speech with a rhyming couplet, as he did at the end of Act 1 Scene 7?", "tags": ["language", "ahead", "guilt"]}], "gloss": [["dudgeon", "the wooden handle of a dagger"], ["palpable", "solid enough to touch"], ["heat-oppressèd", "overheated, feverish"], ["marshal’st", "leads, guides (like a marshal directing troops)"], ["sentinel", "a guard, a lookout"], ["prate", "chatter, gossip"], ["knell", "the sound of a bell rung to announce a death"]]}, {"type": "plenary", "key": "a2h1-end", "short": "Exit", "mins": 6, "title": "Exit ticket", "ticket": [{"q": "Find one phrase from the soliloquy that shows Macbeth’s fear or hesitation.", "a": "For example “Hear not my steps… for fear”, or “I have thee not, and yet I see thee still” — any phrase showing doubt or fear is acceptable."}, {"q": "In Act 1, Lady Macbeth said Macbeth was “too full o’ th’ milk of human kindness” to murder. Does this soliloquy support or challenge her judgement of him?", "a": "It mostly challenges it: although he hesitates and argues with himself, he still goes through with the murder by the end of the speech (“I go, and it is done”), showing he is capable of what she doubted."}, {"q": "Ambition tracker: what does Macbeth want at this point, and what is stopping him from going straight to get it?", "a": "He wants to be king and is ready to murder Duncan to get there. What holds him back is his own fear and guilt, not any outside force: notice how the vision pushing him forward comes from his own mind."}], "next": "Next lesson: we go downstairs with Lady Macbeth, straight after the murder, to see who stays in control."}], "aims": {"li": "To explore Macbeth’s dagger soliloquy, and to understand what a soliloquy is and why Shakespeare uses one here.", "sc": ["I can explain what a soliloquy is.", "I can find a phrase in the soliloquy that shows Macbeth’s fear or hesitation.", "I can explain what the dagger vision suggests about where Macbeth’s ambition is coming from."], "word": {"w": "soliloquy", "m": "a speech in which a character speaks their thoughts, alone on stage.", "eg": "Macbeth’s dagger speech is a soliloquy: no one else can hear his private thoughts. Use the word in one sentence today."}, "bridge": "In your Case File you reviewed how Lady Macbeth sees Macbeth’s character before the murder. Tonight, in this scene, Macbeth is alone for the first time since deciding to kill Duncan."}}, {"title": "Act 2, Lesson 2", "subtitle": "Scene 2.2: after the murder", "steps": [{"type": "aims", "key": "a2h2-aims", "short": "Aims", "mins": 5, "title": "Today’s lesson", "doNow": {"title": "Do now: what do you remember?", "qa": [{"q": "What did Macbeth see and argue with, alone on stage last lesson?", "a": "A vision of a dagger, which he decided was “a dagger of the mind” created by his own guilty thoughts."}, {"q": "What signal was Macbeth waiting for before he went to Duncan’s room?", "a": "Lady Macbeth ringing a bell."}, {"q": "What is a soliloquy?", "a": "A speech where a character shares their private thoughts alone on stage."}]}}, {"type": "link", "key": "a2l2", "short": "What’s happening", "mins": 4, "title": "Downstairs, moments later", "text": "Downstairs, Lady Macbeth feels bold because she has drunk the same wine that made Duncan’s {{guards}} fall asleep, and she has left the {{daggers}} ready for Macbeth. When Macbeth returns, badly shaken, he says he has done the {{deed}}. He describes hearing two of the sleeping men wake, say their prayers, and go back to sleep — he could not say ‘{{Amen}}’ with them. He then says he heard a voice cry that he had murdered {{sleep}} itself, and that he will ‘sleep no more’."}, {"type": "extract", "key": "a2e12", "short": "2.2 Control", "mins": 15, "label": "Extract 12", "title": "Act 2, Scene 2: Lady Macbeth takes control", "sub": "Straight after the murder", "scene": "2.2", "setup": "Lady Macbeth is waiting downstairs when Macbeth returns, shaken, with the murder weapons still in his hands. Watch how differently each of them speaks.", "think": "With a partner (30 seconds): find one word or phrase that shows Lady Macbeth is still in control.", "thinkSecs": 30, "task": "Underline one thing Lady Macbeth says that shows she is in control. Circle one thing Macbeth says that shows he has lost his composure.", "lines": [{"k": "sp", "t": "Lady Macbeth"}, {"k": "ln", "n": 58, "t": "Who was it that thus cried? Why, worthy thane,"}, {"k": "ln", "n": 59, "t": "You do unbend your noble strength to think"}, {"k": "ln", "n": 60, "t": "So brainsickly of things. Go get some water"}, {"k": "ln", "n": 61, "t": "And wash this filthy witness from your hand.—"}, {"k": "ln", "n": 62, "t": "Why did you bring these daggers from the place?"}, {"k": "ln", "n": 63, "t": "They must lie there. Go, carry them and smear"}, {"k": "ln", "n": 64, "t": "The sleepy grooms with blood."}, {"k": "sp", "t": "Macbeth"}, {"k": "ln", "n": 65, "t": "I’ll go no more."}, {"k": "ln", "n": 66, "t": "I am afraid to think what I have done."}, {"k": "ln", "n": 67, "t": "Look on ’t again I dare not."}, {"k": "sp", "t": "Lady Macbeth"}, {"k": "ln", "n": 68, "t": "Infirm of purpose!"}, {"k": "ln", "n": 69, "t": "Give me the daggers. The sleeping and the dead"}, {"k": "ln", "n": 70, "t": "Are but as pictures. ’Tis the eye of childhood"}, {"k": "ln", "n": 71, "t": "That fears a painted devil. If he do bleed,"}, {"k": "ln", "n": 72, "t": "I’ll gild the faces of the grooms withal,"}, {"k": "ln", "n": 73, "t": "For it must seem their guilt."}, {"k": "st", "t": "She exits with the daggers. Knock within.", "key": "s73"}], "notes": [{"id": "a2n12-1", "from": 58, "to": 60, "title": "Calm and in control", "meaning": "Lady Macbeth calmly asks who cried out, then tells Macbeth he is “unbending his noble strength” by thinking so “brainsickly” (in a sick, confused way) about what has happened.", "effect": "While Macbeth is falling apart, she stays composed, even flattering him (“worthy thane”) while correcting him. This is the clearest evidence yet of the contrast between them.", "ask": "How does calling him “worthy thane” while criticising him make her seem more, not less, in control?", "tags": ["lady", "peel"]}, {"id": "a2n12-2", "from": 61, "to": 64, "title": "Practical instructions", "meaning": "She gives Macbeth a string of practical, physical tasks: wash his hands, return the daggers, smear the sleeping guards with blood to frame them.", "effect": "Notice the short, direct commands. She thinks in actions and solutions while Macbeth is frozen by what he has done. This is a strong quotation for showing her taking control.", "tags": ["lady", "peel"]}, {"id": "a2n12-3", "from": 65, "to": 67, "title": "Macbeth freezes", "meaning": "Macbeth refuses to go back with the daggers, admits he is afraid even to think about what he has done, and says he dares not look at it again.", "effect": "Compare this with the dagger soliloquy: there he argued and reasoned before acting; here he can barely manage full sentences. His confidence has collapsed.", "ask": "Last lesson Macbeth said “I go, and it is done.” How has his tone changed now that it actually is done?", "tags": ["ambition", "guilt", "ahead"]}, {"id": "a2n12-4", "at": 68, "phrase": "Infirm of purpose!", "title": "Word to know: foil", "meaning": "“Infirm of purpose” means weak-willed, unable to follow through. Lady Macbeth snaps this at Macbeth in frustration.", "effect": "This short, sharp line shows her impatience with his hesitation. Shakespeare places two opposite characters side by side here: her hard decisiveness against his guilt-stricken hesitation. That contrast is what a foil is — today’s word.", "tags": ["lady", "language", "peel"]}, {"id": "a2n12-5", "from": 69, "to": 71, "title": "The sleeping and the dead are “pictures”", "meaning": "She says the sleeping and the dead look the same, “but as pictures”, and only a child (“the eye of childhood”) would be frightened by a painted image of the devil.", "effect": "She reduces murder to something almost harmless, an image rather than a real horror. This tells us how she is managing her own fear, not necessarily that she feels none.", "ask": "Is Lady Macbeth genuinely fearless here, or is she talking herself into it, the way Macbeth did in his soliloquy?", "tags": ["lady", "appearance", "peel"]}, {"id": "a2n12-6", "from": 72, "to": 73, "title": "Gild and guilt", "meaning": "“Gild” means to cover with a gold colour: here, she means smearing the grooms’ faces with blood so that they look guilty.", "effect": "“Gild” and “guilt” sound alike and sit close together, linking the idea of covering something up with the crime itself. This is the “false face” trick from Act 1 Scene 7, now put into action.", "ask": "Where else in the play has “hiding the truth behind a surface” appeared before?", "tags": ["lady", "language", "appearance", "ahead"]}], "gloss": [["unbend", "relax, let go of"], ["brainsickly", "in a sick, confused way"], ["witness", "evidence, proof (here: the blood)"], ["infirm of purpose", "weak-willed, unable to follow through"], ["gild", "cover with a gold colour"], ["withal", "with it, as well"]]}, {"type": "link", "key": "a2l3", "short": "What’s happening", "mins": 3, "title": "The knocking begins", "text": "Someone begins knocking loudly at the gate. Macbeth stares at his bloody hands and imagines that the whole ocean could not wash them {{clean}}; he says the sea itself would turn red instead. Lady Macbeth tells him a little {{water}} is all it takes, and hurries him away to change before the knocking is answered.", "hinge": {"q": "What does Macbeth mean when he says the ocean could not wash the blood from his hand?", "opts": ["The blood is a strange colour.", "His guilt feels too great to ever be washed away.", "He wants to go swimming.", "The water in the castle is dirty."], "correct": 1, "why": "Macbeth imagines the opposite happening — the sea turning red from his hand, not his hand becoming clean. His guilt feels permanent, however much water is used."}}, {"type": "plenary", "key": "a2h2-end", "short": "Exit", "mins": 7, "title": "Exit ticket", "ticket": [{"q": "Find a quotation in the extract that shows Lady Macbeth staying calm and in control.", "a": "For example “Infirm of purpose! / Give me the daggers” or “A little water clears us of this deed.”"}, {"q": "Explain what “’Tis the eye of childhood / That fears a painted devil” suggests about how Lady Macbeth sees fear.", "a": "She compares fear of what you’ve done to a child’s fear of a painted (fake) devil: not real danger, just an image. It suggests she believes guilt and fear are something you can simply choose to ignore."}, {"q": "Ambition tracker: compare Macbeth’s “I am afraid to think what I have done” with his “I go, and it is done” from last lesson. What has changed?", "a": "Before the murder he pushed himself forward with resolve; now that it is done, his confidence has collapsed into guilt and fear. Keep this contrast for comparing him with the very different man we meet in Act 3."}, {"q": "Case File: add one new piece of evidence to your Lady Macbeth Case File from today’s scene.", "a": "Any moment showing her decisiveness, calmness, or control — for example “Infirm of purpose!” or her plan to gild the grooms’ faces with blood."}], "next": "Next lesson: we build the skills for a PEEL paragraph about Lady Macbeth, using the evidence you’ve collected across both lessons."}], "aims": {"li": "To explore how Lady Macbeth manages Macbeth immediately after the murder, and to understand what a foil is.", "sc": ["I can find a quotation showing Lady Macbeth staying calm and in control.", "I can explain what “foil” means and identify how Macbeth and Lady Macbeth act as foils for each other in this scene.", "I can choose the strongest quotation from this scene for a PEEL paragraph about Lady Macbeth."], "word": {"w": "foil", "m": "a character whose traits contrast with another’s, making both characters’ traits stand out.", "eg": "Lady Macbeth’s calm control makes Macbeth’s panic even more obvious, and the other way round. Use the word in one sentence today."}, "bridge": "Last lesson, Macbeth argued with a vision of a dagger, then went to murder Duncan. This scene picks up moments later, downstairs, where Lady Macbeth is waiting."}}], "QUIZ": []};
+
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmt = (s) => esc(s).replace(/\[([^\]]+)\]/g, '<i class="sd">[$1]</i>');
+const SHORT = { ambition: "Ambition", language: "Language", appearance: "Appearance", ahead: "Look ahead", guilt: "Guilt", lady: "Lady Macbeth", peel: "★ PEEL evidence" };
+const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ratings are the only thing kept on the device, and only if the browser allows it */
+const RKEY = "macbeth-act2-ratings";
+function loadRate() { try { return JSON.parse(localStorage.getItem(RKEY) || "{}"); } catch (e) { return {}; } }
+function saveRate() { try { localStorage.setItem(RKEY, JSON.stringify(S.rate)); } catch (e) { /* storage unavailable */ } }
+
+/* S.drawer: which side panel is open (null = closed). S.wide / S.mainHidden: how the two panes share the screen. S.focus: extract-only mode. */
+const S = { view: "lesson", h: 0, s: 0, tag: "all", sel: null, scale: 1, drawer: null, wide: false, mainHidden: false, focus: false,
+  rev: { tab: "quotes", tag: "all", quiz: null }, rate: loadRate(), battle: { r: 0, meter: 20, picked: null } };
+const cur = () => DATA.hours[S.h].steps[S.s];
+let DR = {}; /* drawers of the step on screen */
+
+/* order notes by position in the text */
+DATA.hours.forEach((h) => h.steps.forEach((st) => {
+  if (st.type !== "extract") return;
+  const posOf = (n) => {
+    let i;
+    if (n.stage) i = st.lines.findIndex((l) => l.k === "st" && l.key === n.stage);
+    else { const ln = n.at !== undefined ? n.at : n.from; i = st.lines.findIndex((l) => l.k === "ln" && l.n === ln); }
+    return i * 1000 + (n.phrase && !n.stage ? Math.max(0, (st.lines[i].t || "").indexOf(n.phrase)) : 0);
+  };
+  st.notes.forEach((n) => (n._pos = posOf(n)));
+  st.notes.sort((a, b) => a._pos - b._pos);
+}));
+
+const tagOK = (n, tag) => tag === "all" || n.tags.includes(tag);
+const match = (n) => tagOK(n, S.tag);
+const visible = (st) => st.notes.filter(match);
+const byId = (st, id) => st.notes.find((n) => n.id === id);
+
+/* ---------- top bar: lessons menu + navigation ---------- */
+function renderTop() {
+  $("#lbl").textContent = DATA.hours[S.h].title;
+  $("#lmenu").innerHTML = DATA.hours.map((h, i) =>
+    `<button class="lm${i === S.h ? " on" : ""}" data-h="${i}"><b>${esc(h.title)}</b><small>${esc(h.subtitle)}</small></button>`).join("");
+}
+function renderNav() {
+  const nav = $("#nav");
+  const h = DATA.hours[S.h], n = h.steps.length;
+  const first = S.h === 0 && S.s === 0;
+  const lastStep = S.s === n - 1, lastAll = S.h === DATA.hours.length - 1 && lastStep;
+  const nextLabel = !lastStep ? `Next: ${esc(h.steps[S.s + 1].short)}` : lastAll ? "Finished" : "Next lesson";
+  nav.innerHTML =
+    `<button class="btn back" data-act="prev" ${first ? "disabled" : ""} aria-label="${S.s === 0 && !first ? "Last lesson" : "Back"}"><i class="ic ic-back"></i><span class="tx">${S.s === 0 && !first ? "Last lesson" : "Back"}</span></button>` +
+    `<ol class="steps">` + h.steps.map((s, i) =>
+      `<li class="${i < S.s ? "done" : ""}"><button class="stp ${s.type}${i === S.s ? " on" : ""}${i < S.s ? " done" : ""}" data-s="${i}" title="${esc(s.short)} · about ${s.mins} min" ${i === S.s ? 'aria-current="step"' : ""}><span class="pn">${i + 1}</span><span class="pl">${esc(s.short)}</span></button></li>`).join("") + `</ol>` +
+    `<button class="btn primary next" data-act="next" ${lastAll ? "disabled" : ""}><span class="tx">${nextLabel}</span><i class="ic ic-next"></i></button>`;
+}
+
+/* ---------- bottom bar: theme filters (notes) ---------- */
+function chipRow(notes, active) {
+  const counts = {};
+  notes.forEach((n) => n.tags.forEach((t) => (counts[t] = (counts[t] || 0) + 1)));
+  return `<span class="fl">Show notes about</span><button class="chip${active === "all" ? " on" : ""}" data-tag="all">All (${notes.length})</button>` +
+    Object.keys(DATA.TAGS).filter((t) => counts[t]).map((t) =>
+      `<button class="chip tg-${t}${active === t ? " on" : ""}" data-tag="${t}"><i class="dot"></i>${esc(SHORT[t])} (${counts[t]})</button>`).join("");
+}
+function renderFilters() {
+  const el = $("#filters");
+  const st = cur();
+  if (st.type !== "extract") { el.hidden = true; return; }
+  el.hidden = false;
+  const has = new Set(); st.notes.forEach((n) => n.tags.forEach((t) => has.add(t)));
+  if (S.tag !== "all" && !has.has(S.tag)) S.tag = "all";
+  el.innerHTML = chipRow(st.notes, S.tag);
+}
+
+/* ---------- shared pieces ---------- */
+function qaCards(qa) {
+  return qa.map((q) => `<div class="qa ${q.lvl || ""}" role="button" tabindex="0" data-qa>${q.lvl ? `<span class="lv">${q.lvl === "core" ? "Core" : "Stretch"}</span>` : ""}<div class="qq">${esc(q.q)}</div><div class="aa">${esc(q.a)}</div></div>`).join("");
+}
+function ratingHTML(h) {
+  const A = DATA.hours[h].aims;
+  const items = A.stretch ? [...A.sc, A.stretch] : [...A.sc];
+  return items.map((t, i) => {
+    const v = S.rate[h + ":" + i];
+    return `<div class="rate"><p>${A.stretch && i === A.sc.length ? "<b>Stretch:</b> " : ""}${esc(t)}</p><div class="rbtns">` +
+      ["Not yet", "Nearly", "Got it"].map((l, k) => `<button class="rb${v === k ? " on" : ""}" data-rate="${h}:${i}:${k}">${l}</button>`).join("") + `</div></div>`;
+  }).join("");
+}
+function clozeParts(text) {
+  let i = 0;
+  const html = esc(text).replace(/\{\{(.+?)\}\}/g, (m, a) => { i++; return `<span class="gap" data-gap role="button" tabindex="0"><sup>${i}</sup><span class="ans">${esc(a)}</span></span>`; });
+  const bank = [...text.matchAll(/\{\{(.+?)\}\}/g)].map((m) => m[1]).sort((a, b) => a.localeCompare(b));
+  return { html, bank };
+}
+function hingeHTML(hg) {
+  return `<div class="hinge"><div class="lab">Quick check: vote, then reveal</div><p class="hq">${esc(hg.q)}</p>` +
+    hg.opts.map((o, i) => `<button class="opt" data-hinge="${i}">${"ABCD"[i]}&nbsp; ${esc(o)}</button>`).join("") +
+    `<div class="row"><button class="ghost small" data-act="hingeshow">Show answer</button></div><div class="hres" hidden></div></div>`;
+}
+const ideas = (items) => items.map((i) => `<div class="idea"><b>${esc(i.h)}</b><p>${esc(i.t)}</p></div>`).join("");
+
+/* ---------- the extract ---------- */
+function annSpans(text, notes) {
+  const marks = [];
+  notes.forEach((n) => { const i = text.indexOf(n.phrase); if (i >= 0) marks.push({ s: i, e: i + n.phrase.length, n }); });
+  marks.sort((a, b) => a.s - b.s);
+  let out = "", p = 0;
+  marks.forEach((m) => {
+    out += fmt(text.slice(p, m.s));
+    out += `<span class="ann${match(m.n) ? "" : " dim"}" data-note="${m.n.id}" role="button" tabindex="0">${fmt(text.slice(m.s, m.e))}</span>`;
+    p = m.e;
+  });
+  return out + fmt(text.slice(p));
+}
+function quoteOf(st, n) {
+  if (n.phrase) return n.phrase;
+  const ls = st.lines.filter((l) => l.k === "ln" && l.n >= n.from && l.n <= n.to).map((l) => l.t);
+  return ls.length > 2 ? ls[0] + " … " + ls[ls.length - 1] : ls.join(" / ");
+}
+function notePanel(st, n) {
+  const vis = visible(st), idx = vis.findIndex((x) => x.id === n.id);
+  const tiers = (n.support || n.stretch)
+    ? `<div class="tierbtns">${n.support ? `<button class="ghost small" data-act="tog" data-t="sup">Need a starter?</button>` : ""}${n.stretch ? `<button class="ghost small" data-act="tog" data-t="str">Push further</button>` : ""}</div>` +
+      (n.support ? `<div class="tier sup" hidden><b>Sentence starter</b>${esc(n.support)}</div>` : "") +
+      (n.stretch ? `<div class="tier str" hidden><b>Stretch question</b>${esc(n.stretch)}</div>` : "")
+    : "";
+  return `<div class="ptop"><span>Note ${idx + 1} of ${vis.length}</span></div>` +
+    `<p class="q">${fmt(quoteOf(st, n))}</p><h3>${esc(n.title)}</h3>` +
+    `<div class="lab">In plain English</div><p>${esc(n.meaning)}</p>` +
+    `<div class="lab">Why it matters</div><p>${esc(n.effect)}</p>` +
+    (n.ask ? `<div class="ask"><b>Ask the class</b><p>${esc(n.ask)}</p></div>` : "") + tiers +
+    `<div class="tagrow">${n.tags.map((t) => `<span class="chip tg-${t}"><i class="dot"></i>${esc(DATA.TAGS[t])}</span>`).join("")}</div>` +
+    `<div class="notenav"><button data-act="pn">◀ Previous note</button><button data-act="nn">Next note ▶</button></div>`;
+}
+function scenePanel(st) {
+  return `<p class="lead">${esc(st.setup)}</p>` +
+    (st.think ? `<div class="think"><b>Think first</b><p>${esc(st.think)}</p><button class="ghost small" data-act="timer" data-sec="${st.thinkSecs || 30}">Start timer</button></div>` : "") +
+    `<button class="ghost" data-act="firstnote">Open the first note</button>`;
+}
+
+/* ---------- what each step shows: one main focus, the rest in drawers ---------- */
+const VIEW = {
+  aims(st) {
+    const A = DATA.hours[S.h].aims;
+    return {
+      kick: `About ${st.mins} min`, title: st.title, sub: A.bridge || "", rail: "Aims",
+      body: `<div class="inner aimsbody"><div class="li"><div class="lab">Learning intention</div><p>${esc(A.li)}</p></div>` +
+        `<div class="sc"><div class="lab">Success criteria: by the end of the lesson I can…</div><ul>${A.sc.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>${A.stretch ? `<p class="stretchsc"><b>Stretch:</b> ${esc(A.stretch)}</p>` : ""}</div></div>`,
+      drawers: [
+        { id: "donow", label: "Do now", cta: true, title: st.doNow.title, html: () => `<p class="hint">Talk in pairs first. Tap a question to check.</p>${qaCards(st.doNow.qa)}<div class="row"><button class="ghost" data-act="timer" data-sec="60">Start a 1-minute timer</button></div>` },
+        { id: "word", label: "Word of the lesson", title: "Word of the lesson", html: () => `<div class="word"><b>${esc(A.word.w)}</b> means ${esc(A.word.m)} ${esc(A.word.eg)}</div>` },
+      ],
+    };
+  },
+  context(st) {
+    return {
+      kick: `About ${st.mins} min`, title: st.title, sub: st.lead, rail: "Cards",
+      body: `<div class="inner"><div class="cards">${st.blocks.map((b) => `<div class="fact card" role="button" tabindex="0" data-reveal><h3>${esc(b.h)}</h3><p class="prompt">${esc(b.prompt || "")}</p><p class="txt">${esc(b.t)}</p><span class="tap">Talk first, then tap to check</span></div>`).join("")}</div></div>`,
+      drawers: [{ id: "ideas", label: st.side.title, title: st.side.title, html: () => ideas(st.side.items) }],
+    };
+  },
+  extract(st) {
+    const phr = {}, rng = {}, stg = {};
+    st.notes.forEach((n) => {
+      if (n.phrase) { if (n.stage) (stg[n.stage] = stg[n.stage] || []).push(n); else (phr[n.at] = phr[n.at] || []).push(n); }
+      else for (let i = n.from; i <= n.to; i++) rng[i] = n;
+    });
+    const body = st.lines.map((l) => {
+      if (l.k === "sp") return `<div class="sp">${esc(l.t)}</div>`;
+      if (l.k === "gap") return `<div class="gapline">${fmt(l.t)}</div>`;
+      if (l.k === "st") return `<div class="stg">${l.key && stg[l.key] ? annSpans(l.t, stg[l.key]) : fmt(l.t)}</div>`;
+      const r = rng[l.n];
+      const num = l.n % 5 === 0 ? l.n : "";
+      if (r) return `<div class="ln rng${match(r) ? "" : " dim"}" data-note="${r.id}" role="button" tabindex="0"><span class="num">${num}</span><span class="tx">${fmt(l.t)}</span></div>`;
+      return `<div class="ln"><span class="num">${num}</span><span class="tx">${annSpans(l.t, phr[l.n] || [])}</span></div>`;
+    }).join("");
+    return {
+      kick: `${st.label} · about ${st.mins} min`, title: st.title, sub: st.sub, rail: "Extract", focus: true,
+      body: `<div class="lines">${body}</div><div class="foot">Tap an underlined phrase or highlighted line to open its note. Text: Folger Shakespeare Library edition (folger.edu). Line numbers as printed there.</div>`,
+      drawers: [
+        { id: "scene", label: "Before you read", title: "Before you read", cta: !!st.think, html: () => scenePanel(st) },
+        { id: "note", label: () => `Notes (${visible(st).length})` },
+      ],
+    };
+  },
+  link(st) {
+    const { html, bank } = clozeParts(st.text);
+    const drawers = [];
+    if (st.hinge) drawers.push({ id: "hinge", label: "Quick check", cta: true, title: "Quick check", html: () => hingeHTML(st.hinge) });
+    if (st.ext) drawers.push({ id: "ext", label: "Stretch", title: "Stretch", html: () => `<p class="stretchsc"><b>Stretch:</b> ${esc(st.ext)}</p>` });
+    return {
+      kick: `About ${st.mins} min`, title: st.title, sub: "Read aloud and tap each gap to reveal the word.", rail: "Gap-fill",
+      actions: `<button class="tb" data-act="reveal">Reveal all</button>`,
+      body: `<div class="inner"><div class="lab">Word bank</div><div class="bank">${bank.map((a) => `<span>${esc(a)}</span>`).join("")}</div><p class="cloze">${html}</p></div>`,
+      drawers,
+    };
+  },
+  plenary(st) {
+    return {
+      kick: `About ${st.mins} min`, title: st.title, sub: "Answer on your handout first. Then tap a question to check.", rail: "Exit ticket",
+      body: `<div class="inner">${qaCards(st.ticket)}</div>`,
+      drawers: [
+        { id: "rate", label: "Rate yourself", cta: true, title: "Rate yourself", html: () => `<p class="hint">How well can you do each of today’s success criteria?</p><div id="ratings">${ratingHTML(S.h)}</div>` },
+        { id: "next", label: "What’s next", title: "What’s next", html: () => `<div class="track"><p>${esc(st.next)}</p></div>` },
+      ],
+    };
+  },
+  practice(st) {
+    const kind = { mc: "Multiple choice", tf: "True or false", match: "Matching", short: "Write your answer" };
+    const cards = st.qs.map((q) => {
+      let body = `<div class="qq">${esc(q.q)}</div>`;
+      if (q.k === "mc") body += `<ol class="opts opts-a">${q.opts.map((o) => `<li>${esc(o)}</li>`).join("")}</ol>`;
+      if (q.k === "tf") body += `<ul class="opts">${q.items.map((o) => `<li>${esc(o)}</li>`).join("")}</ul>`;
+      if (q.k === "match") body += `<div class="mt"><ul>${q.left.map((o) => `<li>${esc(o)}</li>`).join("")}</ul><ul>${q.right.map((o) => `<li>${esc(o)}</li>`).join("")}</ul></div>`;
+      const ms = q.ms ? `<ul class="ms">${q.ms.map((m) => `<li>${esc(m)}</li>`).join("")}</ul>` : "";
+      return `<div class="qa" role="button" tabindex="0" data-qa><span class="lv">${kind[q.k]} · ${q.marks} mark${q.marks > 1 ? "s" : ""}</span>${body}<div class="aa">${esc(q.a)}${ms}</div></div>`;
+    }).join("");
+    const mins = Math.round((st.timer || 300) / 60);
+    return {
+      kick: `About ${st.mins} min`, title: st.title, sub: st.sub, rail: "Questions",
+      actions: `<button class="tb" data-act="timer" data-sec="${st.timer || 300}">${mins}-minute timer</button>`,
+      body: `<div class="inner">${cards}</div>`,
+      drawers: [{ id: "tips", label: st.tipsTitle, title: st.tipsTitle, html: () => ideas(st.tips) }],
+    };
+  },
+  assess(st) {
+    return { raw: `<section class="pane wide assess"><h2>${esc(st.title)}</h2><p class="sub">${esc(st.sub || "")}</p>` +
+      `<div class="row">${st.presets.map((m) => `<button class="ghost primary big" data-act="timer" data-sec="${m * 60}">Start ${m} minutes</button>`).join("")}<button class="ghost big" data-act="tstop">Stop timer</button></div></section>`, drawers: [] };
+  },
+  spot(st) {
+    return {
+      kick: `About ${st.mins} min`, title: st.title, sub: st.sub, rail: "Spot the irony",
+      body: `<div class="inner">` + st.items.map((it, i) => `<div class="spotitem" role="button" tabindex="0" data-spot="${i}"><p class="sq">${esc(it.t)}</p><p class="sw" hidden>${esc(it.why)}</p></div>`).join("") +
+        `<div class="row"><button class="ghost primary" data-act="spotcheck">Check my answers</button><button class="ghost" data-act="spotreset">Start again</button></div><p class="score" id="spotscore"></p></div>`,
+      drawers: [{ id: "tips", label: st.tipsTitle, title: st.tipsTitle, html: () => ideas(st.tips) }],
+    };
+  },
+  battle(st) {
+    const B = S.battle, R = st.rounds, done = B.r >= R.length;
+    let body;
+    if (done) {
+      body = `<div class="bcard"><p class="score">${B.meter >= 100 ? "Macbeth is settled." : "Macbeth is nearly convinced."}</p><p class="hres">${esc(st.end)}</p><button class="ghost primary" data-act="brestart">Play again</button></div>`;
+    } else {
+      const rd = R[B.r], p = B.picked;
+      body = `<div class="bcard"><span class="lab">Round ${B.r + 1} of ${R.length}: Macbeth says</span><p class="q">${esc(rd.doubt)}</p><span class="lab">Lady Macbeth: choose your tactic</span>` +
+        rd.opts.map((o, i) => `<button class="opt${p !== null ? (o.best ? " right" : i === p ? " wrong" : "") : ""}" data-bopt="${i}" ${p !== null ? "disabled" : ""}>${String.fromCharCode(65 + i)}&nbsp; ${esc(o.t)}</button>`).join("") +
+        (p !== null ? `<p class="hres"><b>${rd.opts[p].best ? "Strong choice." : "Not quite."}</b> ${esc(rd.opts[p].why)}</p><button class="ghost primary" data-act="bnext">${B.r + 1 === R.length ? "See the result" : "Next round"}</button>` : "") + `</div>`;
+    }
+    return {
+      kick: `About ${st.mins} min`, title: st.title, sub: st.sub, rail: "Battle",
+      headExtra: `<div class="mhead"><span>Macbeth’s resolve</span><div class="meter" role="img" aria-label="Macbeth’s resolve ${B.meter} percent"><div class="bar" style="width:${B.meter}%"></div></div><b>${B.meter}%</b></div>`,
+      body: `<div class="inner">${body}</div>`,
+      drawers: [{ id: "quote", label: "Use a quotation", title: "Use a quotation", html: () => `<div class="idea"><b>Use a quotation</b><p>Every strong tactic comes from a line in the extract. Say which line you would quote.</p></div>` }],
+    };
+  },
+};
+
+/* ---------- putting a step on screen ---------- */
+function mainMarkup(v) {
+  if (v.raw) return v.raw;
+  const btns = v.drawers.map((d) => `<button class="tb${d.cta ? " cta" : ""}" data-drawer="${d.id}" aria-pressed="false">${esc(typeof d.label === "function" ? d.label() : d.label)}</button>`).join("");
+  const focus = v.focus ? `<button class="tb" data-act="focus" title="Show only the extract (F)"><i class="ic ic-focus"></i>Focus</button>` : "";
+  return `<section class="pane main" id="mainpane"><div class="phead"><div class="pt"><span class="kick">${esc(v.kick)}</span><h2>${esc(v.title)}</h2>${v.sub ? `<p class="sub">${esc(v.sub)}</p>` : ""}</div>` +
+    `<div class="ptools">${btns}${v.actions || ""}${focus}</div>${v.headExtra || ""}</div><div class="pbody" id="script">${v.body}</div></section>`;
+}
+const drawerMarkup = () =>
+  `<aside class="pane drawer" id="drawer" hidden aria-label="Side panel"><div class="dhead"><h3 id="dtitle"></h3><div class="dtools">` +
+  `<button class="tb" data-act="dwide" title="Make this panel wider or narrower"><i class="ic ic-wide"></i><span id="lw">Wider</span></button>` +
+  `<button class="tb" data-act="dfull" title="Hide the main pane to use the full width"><i class="ic ic-full"></i><span id="lf">Hide</span></button>` +
+  `<button class="ib" data-act="dclose" aria-label="Close" title="Close (Esc)"><i class="ic ic-close"></i></button></div></div><div class="dbody" id="panel" aria-live="polite"></div></aside>` +
+  `<button class="railtab" id="mainrail" data-act="showmain" hidden></button>`;
+
+function mount(keep) {
+  const el = $("#stage");
+  const st = cur();
+  const v = VIEW[st.type](st);
+  DR = {}; v.drawers.forEach((d) => (DR[d.id] = d));
+  const keepTop = keep && $("#script") ? $("#script").scrollTop : 0;
+  if (!keep) { S.drawer = null; S.wide = false; S.mainHidden = false; S.sel = null; }
+  el.innerHTML = mainMarkup(v) + drawerMarkup();
+  S.rail = (v.rail || "main pane").toLowerCase();
+  const rail = $("#mainrail"); if (rail) rail.textContent = "Show " + S.rail;
+  if (S.drawer && S.drawer !== "note" && !DR[S.drawer]) S.drawer = null;
+  if (S.drawer === "note" && !S.sel) S.drawer = null;
+  layout();
+  if (S.sel) markSel();
+  const sc = $("#script"); if (sc) sc.scrollTop = keepTop;
+}
+function markSel() { document.querySelectorAll("[data-note]").forEach((el) => el.classList.toggle("on", el.dataset.note === S.sel)); }
+function layout() {
+  const c = $("#stage"), d = $("#drawer");
+  const has = !!S.drawer && !!d;
+  c.classList.toggle("has-drawer", has);
+  c.classList.toggle("wide", has && S.wide);
+  c.classList.toggle("mainhidden", has && S.mainHidden);
+  if (d) d.hidden = !has;
+  const rail = $("#mainrail"); if (rail) rail.hidden = !(has && S.mainHidden);
+  document.querySelectorAll(".tb[data-drawer]").forEach((b) => { const on = b.dataset.drawer === S.drawer; b.classList.toggle("on", on); b.setAttribute("aria-pressed", String(on)); });
+  if (has) { fillDrawer(); $("#lw").textContent = S.wide ? "Narrower" : "Wider"; $("#lf").textContent = (S.mainHidden ? "Show " : "Hide ") + S.rail; }
+}
+function fillDrawer() {
+  const st = cur();
+  let title, html;
+  if (S.drawer === "note") {
+    const n = S.sel && byId(st, S.sel);
+    if (!n) { closeDrawer(); return; }
+    title = "Notes"; html = notePanel(st, n);
+  } else { const dd = DR[S.drawer]; title = dd.title || (typeof dd.label === "string" ? dd.label : ""); html = dd.html(); }
+  $("#dtitle").textContent = title;
+  $("#panel").innerHTML = html;
+  $("#panel").scrollTop = 0;
+}
+function openDrawer(id) { S.drawer = id; layout(); }
+function closeDrawer() {
+  if (S.drawer === "note") S.sel = null;
+  S.drawer = null; S.wide = false; S.mainHidden = false; markSel(); layout();
+}
+function select(id) {
+  S.sel = id; S.drawer = "note"; markSel(); layout();
+  const first = document.querySelector(`[data-note="${id}"]`);
+  if (first) setTimeout(() => first.scrollIntoView({ block: "center", behavior: reduced() ? "auto" : "smooth" }), 40);
+}
+function stepNote(d) {
+  const st = cur(), vis = visible(st);
+  if (!vis.length) return;
+  let i = vis.findIndex((n) => n.id === S.sel);
+  i = i < 0 ? (d > 0 ? 0 : vis.length - 1) : (i + d + vis.length) % vis.length;
+  select(vis[i].id);
+}
+function setFocus(on) {
+  if (on && cur().type !== "extract") return;
+  S.focus = on;
+  document.body.classList.toggle("focus", on);
+  $("#fctl").setAttribute("aria-hidden", String(!on));
+  if (on) setTimeout(() => $("#unfocus").focus({ preventScroll: true }), 400);
+  const sc = $("#script"); if (sc && on) sc.scrollTop = sc.scrollTop;
+}
+
+/* ---------- spot the irony ---------- */
+function spotCheck() {
+  const st = cur(), total = st.items.filter((i) => i.irony).length;
+  let hit = 0, wrong = 0;
+  document.querySelectorAll(".spotitem").forEach((el) => {
+    const it = st.items[+el.dataset.spot], picked = el.classList.contains("picked");
+    el.classList.remove("ok", "bad", "miss", "none");
+    if (picked && it.irony) { el.classList.add("ok"); hit++; }
+    else if (picked) { el.classList.add("bad"); wrong++; }
+    else if (it.irony) el.classList.add("miss");
+    else el.classList.add("none");
+    el.querySelector(".sw").hidden = false;
+  });
+  $("#spotscore").textContent = `You found ${hit} of ${total} ironic lines` + (wrong ? ` and picked ${wrong} that ${wrong === 1 ? "is" : "are"} not dramatic irony.` : ".");
+}
+
+/* ---------- navigation ---------- */
+function renderAll() { renderTop(); renderNav(); renderFilters(); mount(false); }
+function go(h, s) {
+  if (S.focus) setFocus(false);
+  S.h = h; S.s = s; S.sel = null; S.battle = { r: 0, meter: 20, picked: null };
+  renderAll();
+}
+function move(d) {
+  let h = S.h, s = S.s + d;
+  if (s < 0) { if (h === 0) return; h--; s = DATA.hours[h].steps.length - 1; }
+  else if (s >= DATA.hours[h].steps.length) { if (h === DATA.hours.length - 1) return; h++; s = 0; }
+  go(h, s);
+}
+
+/* ---------- timer ---------- */
+const T = { id: null, end: 0 };
+const mmss = (s) => Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+function timerStart(sec) {
+  clearInterval(T.id);
+  const el = $("#timer"); el.hidden = false; el.classList.remove("done");
+  T.end = Date.now() + sec * 1000;
+  const tick = () => {
+    const left = Math.max(0, Math.ceil((T.end - Date.now()) / 1000));
+    $("#tt").textContent = left > 0 ? mmss(left) : "Time!";
+    if (left <= 0) { clearInterval(T.id); el.classList.add("done"); }
+  };
+  tick(); T.id = setInterval(tick, 250);
+}
+function timerStop() { clearInterval(T.id); $("#timer").hidden = true; }
+
+/* ---------- events ---------- */
+function syncReveal(scope) {
+  const btn = (scope || document).querySelector('[data-act="reveal"],[data-act="revealcard"]');
+  if (!btn) return;
+  const gaps = [...(scope || document).querySelectorAll(".gap")];
+  btn.textContent = gaps.length && gaps.every((g) => g.classList.contains("open")) ? "Hide all" : "Reveal all";
+}
+function hingeMark(box, hg, picked) {
+  box.querySelectorAll(".opt").forEach((o, j) => { o.classList.toggle("right", j === hg.correct); o.classList.toggle("wrong", picked !== null && j === picked && j !== hg.correct); });
+  const res = box.querySelector(".hres"); res.hidden = false;
+  res.innerHTML = `<b>${picked === null ? "Answer:" : picked === hg.correct ? "Correct." : "Not quite."}</b> ${esc(hg.why)}`;
+}
+function hidePops() {
+  document.querySelectorAll(".pop").forEach((p) => { p.hidden = true; const b = p.parentElement.querySelector("button[aria-haspopup]"); if (b) b.setAttribute("aria-expanded", "false"); });
+}
+document.addEventListener("click", (e) => {
+  const t = e.target;
+  const pb = t.closest("button[aria-haspopup]");
+  if (pb) {
+    const p = pb.parentElement.querySelector(".pop"), wasHidden = p.hidden;
+    hidePops(); p.hidden = !wasHidden; pb.setAttribute("aria-expanded", String(wasHidden));
+    return;
+  }
+  if (!t.closest(".pop")) hidePops();
+  const dr = t.closest("[data-drawer]");
+  if (dr) {
+    const id = dr.dataset.drawer;
+    if (S.drawer === id) closeDrawer();
+    else if (id === "note") { if (S.sel && visible(cur()).some((n) => n.id === S.sel)) select(S.sel); else stepNote(1); }
+    else { if (S.drawer === "note") S.sel = null; markSel(); openDrawer(id); }
+    return;
+  }
+  const note = t.closest("[data-note]");
+  if (note) { select(note.dataset.note); return; }
+  const gap = t.closest("[data-gap]");
+  if (gap) { gap.classList.toggle("open"); syncReveal(gap.closest(".gapcard") || document); return; }
+  const qa = t.closest("[data-qa]");
+  if (qa) { qa.classList.toggle("open"); return; }
+  const fact = t.closest("[data-reveal]");
+  if (fact) { fact.classList.toggle("open"); return; }
+  const sp = t.closest("[data-spot]");
+  if (sp) { if (!/\b(ok|bad|miss|none)\b/.test(sp.className)) sp.classList.toggle("picked"); return; }
+  const bo = t.closest("[data-bopt]");
+  if (bo) {
+    const B = S.battle, rd = cur().rounds[B.r];
+    if (B.picked === null) { B.picked = +bo.dataset.bopt; B.meter = Math.min(100, B.meter + rd.opts[B.picked].pts); mount(true); }
+    return;
+  }
+  const hb = t.closest("[data-hinge]");
+  if (hb) { hingeMark(hb.closest(".hinge"), cur().hinge, +hb.dataset.hinge); return; }
+  const rate = t.closest("[data-rate]");
+  if (rate) {
+    const [h, i, v] = rate.dataset.rate.split(":");
+    S.rate[h + ":" + i] = +v; saveRate();
+    const box = rate.closest("#ratings, .ratings-h");
+    if (box) box.innerHTML = ratingHTML(+h);
+    return;
+  }
+  const b = t.closest("button");
+  if (!b) return;
+  if (b.closest("#tmenu")) { timerStart(+b.dataset.sec); hidePops(); return; }
+  if (b.dataset.h !== undefined) { hidePops(); return go(+b.dataset.h, 0); }
+  if (b.dataset.s !== undefined) return go(S.h, +b.dataset.s);
+  if (b.dataset.tag !== undefined) {
+    S.tag = b.dataset.tag;
+    const st = cur();
+    if (S.sel && !match(byId(st, S.sel))) { S.sel = null; if (S.drawer === "note") S.drawer = null; }
+    renderFilters(); mount(true);
+    return;
+  }
+  switch (b.dataset.act) {
+    case "next": move(1); break;
+    case "prev": move(-1); break;
+    case "nn": stepNote(1); break;
+    case "pn": stepNote(-1); break;
+    case "firstnote": stepNote(1); break;
+    case "dclose": closeDrawer(); break;
+    case "dwide": S.wide = !S.wide; S.mainHidden = false; layout(); break;
+    case "dfull": S.mainHidden = !S.mainHidden; layout(); break;
+    case "showmain": S.mainHidden = false; layout(); break;
+    case "focus": setFocus(true); break;
+    case "unfocus": setFocus(false); break;
+    case "tog": { const el = $("#panel ." + b.dataset.t); if (el) { el.hidden = !el.hidden; if (!el.hidden) el.scrollIntoView({ block: "nearest" }); } break; }
+    case "timer": timerStart(+b.dataset.sec); break;
+    case "spotcheck": spotCheck(); break;
+    case "spotreset": mount(true); break;
+    case "bnext": S.battle.r++; S.battle.picked = null; mount(true); break;
+    case "brestart": S.battle = { r: 0, meter: 20, picked: null }; mount(true); break;
+    case "tstop": timerStop(); break;
+    case "hingeshow": hingeMark(b.closest(".hinge"), cur().hinge, null); break;
+    case "reveal": case "revealcard": {
+      const scope = b.closest(".gapcard") || document;
+      const gaps = scope.querySelectorAll(".gap");
+      const allOpen = [...gaps].every((g) => g.classList.contains("open"));
+      gaps.forEach((g) => g.classList.toggle("open", !allOpen));
+      syncReveal(scope);
+      break;
+    }
+  }
+});
+document.addEventListener("keydown", (e) => {
+  const tg = e.target instanceof Element ? e.target : document.body;
+  if ((e.key === "Enter" || e.key === " ") && tg.matches("[role=button]")) { e.preventDefault(); tg.click(); return; }
+  if (tg.matches("input,textarea") || e.ctrlKey || e.metaKey || e.altKey) return;
+  if (e.key === "Escape") {
+    if ([...document.querySelectorAll(".pop")].some((p) => !p.hidden)) hidePops();
+    else if (S.focus) setFocus(false);
+    else if (S.drawer) closeDrawer();
+    return;
+  }
+  if (e.key === "f" || e.key === "F") { setFocus(!S.focus); return; }
+  if (S.focus) return;
+  if (e.key === "ArrowRight") move(1);
+  else if (e.key === "ArrowLeft") move(-1);
+  else if (e.key === "]") stepNote(1);
+  else if (e.key === "[") stepNote(-1);
+});
+
+/* tools */
+function setScale(d) {
+  S.scale = Math.min(1.6, Math.max(0.75, +(S.scale + d).toFixed(2)));
+  document.documentElement.style.setProperty("--scale", S.scale);
+}
+["#fsm", "#ffm"].forEach((id) => $(id).addEventListener("click", () => setScale(-0.1)));
+["#fsp", "#ffp"].forEach((id) => $(id).addEventListener("click", () => setScale(0.1)));
+function effectiveTheme() { return document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); }
+function syncTheme() { $("#theme").textContent = effectiveTheme() === "dark" ? "Day mode" : "Night mode"; }
+$("#theme").addEventListener("click", () => { document.documentElement.dataset.theme = effectiveTheme() === "dark" ? "light" : "dark"; syncTheme(); });
+$("#full").addEventListener("click", () => {
+  try { if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen(); } catch (err) { /* not available */ }
+});
+syncTheme();
+renderAll();
+</script>
+</body>
+</html>
